@@ -1,0 +1,14 @@
+Example:
+Key contributors to the development of the Connected, Automated Lane Change software
+development include:
+Kyle Rush, Ed Leslie, Fang Zhou, and John Stark of Leidos.
+
+The developers also wish to acknowledge several contributors to this study:
+
+Leidos task lead:  Kelli Raboy
+
+System test support at Federal Law Enforcement Training Center (FLETC) in Cheltenham, MD:
+Tom Phillips, Brittany Comer-Mathis of Leidos
+Jim Tabb, Robert Stratton of FLETC
+
+FHWA task manager:  Bob Ferlis

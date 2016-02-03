@@ -1,0 +1,9 @@
+# Simulink files
+bld/
+cache/
+
+# Hide Simulink/MATLAB autosave files
+*.autosave
+
+# Hide vim backup files
+*~

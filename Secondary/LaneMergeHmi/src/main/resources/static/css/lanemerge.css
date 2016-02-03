@@ -1,0 +1,85 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+#currentContent {
+    min-height:100%;
+    background: #d0d0d0;
+    position:relative;
+}
+
+#header {
+    background: #d0d0d0;
+    padding:10px;
+}
+
+#body {
+    background: #d0d0d0;
+    padding:10px;
+    padding-bottom:240px;   /* Height of the footer */
+}
+
+#footer {
+    background: #d0d0d0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:240px;   /* Height of the footer */
+}
+
+.pageTitle {
+    text-align:center;
+    font-size:30pt;
+    padding-top:10px;
+}
+
+.button {
+    /*background-color: #000000;*/
+    /*color: #FFFFFF;*/
+    font-size:14pt;
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+    padding: 16px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.roleSelector {
+    font-family: Arial, sans-serif;
+    font-size: 28pt;
+    font-weight: bold;
+    color: #000080;
+}
+
+.roleSelectorItem {
+    padding-right: 50px;
+}
+
+.roleMargin {
+    position: relative;
+    left: 100px;
+}
+
+.roleReflector {
+    position: relative;
+    left: 100px;
+}
+
+p.statusMsg {
+    font-family: Arial, sans-serif;
+    font-size: 28pt;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.dimColor {
+    color: #e0e0e0; // a little lighter than the gray background
+}
+
+.highlightColor {
+    color: #0000b0;
+}

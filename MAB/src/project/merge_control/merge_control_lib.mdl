@@ -1,0 +1,5111 @@
+Library {
+  Name			  "merge_control_lib"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_INTERNAL_RTIF"
+  "PGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-9.0, 0.0, 1932.0, 1050.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1686.0, 864.0]
+	ZoomFactor		[1.14]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "450"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "40"
+  Created		  "Wed Oct 28 10:37:50 2015"
+  Creator		  "rushk1"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "rushk1"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Dec 24 10:43:59 2015"
+  RTWModifiedTimeStamp	  372854563
+  ModelVersionFormat	  "1.%<AutoIncrement:125>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1401.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "rti1401.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "dSPACE DS1401 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1401_make_rtw_hook"
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"NetworkClient"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1401.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    17
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		"zationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			450
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		"onPopup"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Platform Name"
+		  Value			  1
+		  String		  "Network Client"
+		}
+		Name			"PlatformSelectionPopup"
+		Value			"Platform Name"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 420, 220, 1500, 860 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      PropagateVarSize	      "Only when execution is resumed"
+      ActionType	      "unset"
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      ForEach
+      IndexMode		      "Zero-based"
+      IterationIndexDataType  "int32"
+      ShowIterationIndex      off
+      StateHandling	      "Separate states for each iteration"
+      StateReset	      "held"
+      ShowResetFlag	      off
+      NeedActiveIterationSignal	off
+      ShowActiveIterationCount off
+      ShowActiveIterationFlag off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      M-S-Function
+      FunctionName	      "matlabfile"
+      DisplayMFileStacktrace  on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Newton-Raphson"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Selector
+      NumberOfDimensions      "1"
+      IndexMode		      "One-based"
+      InputPortWidth	      "-1"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SwitchCase
+      CaseConditions	      "{1}"
+      ShowDefaultCase	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "merge_control_lib"
+    Location		    [-9, 0, 1923, 1050]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "114"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "314"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Angular Reference Frame Converter"
+      SID		      "250"
+      Ports		      [2, 1]
+      Position		      [210, 396, 340, 474]
+      ZOrder		      14
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Angular Reference Frame Converter"
+	Location		[1911, -9, 3849, 1089]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Global Heading"
+	  SID			  "251"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Local Azimuth"
+	  SID			  "253"
+	  Position		  [110, 148, 140, 162]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Degrees in Circle"
+	  SID			  "256"
+	  Position		  [190, 185, 220, 215]
+	  ZOrder		  4
+	  Value			  "360"
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction"
+	  SID			  "255"
+	  Ports			  [2, 1]
+	  Position		  [285, 102, 315, 133]
+	  ZOrder		  3
+	  Operator		  "mod"
+	  OutputSignalType	  "real"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "254"
+	  Ports			  [2, 1]
+	  Position		  [195, 100, 215, 120]
+	  ZOrder		  2
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Global Azimuth"
+	  SID			  "252"
+	  Position		  [370, 113, 400, 127]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Local Azimuth"
+	  SrcPort		  1
+	  Points		  [60, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Global Heading"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Math\nFunction"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Math\nFunction"
+	  SrcPort		  1
+	  DstBlock		  "Global Azimuth"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Degrees in Circle"
+	  SrcPort		  1
+	  Points		  [27, 0; 0, -75]
+	  DstBlock		  "Math\nFunction"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Check Radar Completion"
+      SID		      "288"
+      Ports		      [3, 1]
+      Position		      [210, 521, 340, 599]
+      ZOrder		      15
+      BackgroundColor	      "lightBlue"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Check Radar Completion"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"200"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Radar Target"
+	  SID			  "289"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: FusObjectTrackA"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lane Width"
+	  SID			  "297"
+	  Position		  [110, 143, 140, 157]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Epsilon"
+	  SID			  "309"
+	  Position		  [110, 183, 140, 197]
+	  ZOrder		  599
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  SID			  "303"
+	  Position		  [275, 95, 305, 125]
+	  ZOrder		  598
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  SID			  "293"
+	  Ports			  [1, 1]
+	  Position		  [170, 91, 175, 129]
+	  ZOrder		  3
+	  ShowName		  off
+	  OutputSignals		  "FwdFusTrkALatPos"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<FwdFusTrkALatPos>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  SID			  "298"
+	  Ports			  [2, 1]
+	  Position		  [355, 127, 385, 158]
+	  ZOrder		  10
+	  Operator		  "<="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "310"
+	  Ports			  [2, 1]
+	  Position		  [280, 140, 300, 160]
+	  ZOrder		  600
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Merge Complete"
+	  SID			  "290"
+	  Position		  [425, 138, 455, 152]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "Radar Target"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<FwdFusTrkALatPos>"
+	  ZOrder		  15
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  21
+	  SrcBlock		  "Lane Width"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Merge Complete"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, 25]
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  23
+	  SrcBlock		  "Epsilon"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute Error"
+      SID		      "68"
+      Ports		      [2, 1]
+      Position		      [30, 271, 160, 349]
+      ZOrder		      5
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute Error"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Measured"
+	  SID			  "69"
+	  Position		  [50, 33, 80, 47]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Expected"
+	  SID			  "71"
+	  Position		  [50, 73, 80, 87]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  SID			  "73"
+	  Position		  [180, 35, 210, 65]
+	  ZOrder		  3
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Subtract"
+	  SID			  "72"
+	  Ports			  [2, 1]
+	  Position		  [120, 32, 150, 63]
+	  ZOrder		  2
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Error"
+	  SID			  "70"
+	  Position		  [240, 43, 270, 57]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Measured"
+	  SrcPort		  1
+	  DstBlock		  "Subtract"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Expected"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, -25]
+	  DstBlock		  "Subtract"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Subtract"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Error"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute GPS Offset"
+      SID		      "82"
+      Ports		      [4, 3]
+      Position		      [30, 396, 160, 474]
+      ZOrder		      6
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute GPS Offset"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Latitude"
+	  SID			  "83"
+	  Position		  [110, 108, 140, 122]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Longitude"
+	  SID			  "85"
+	  Position		  [110, 168, 140, 182]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Heading"
+	  SID			  "86"
+	  Position		  [110, 228, 140, 242]
+	  ZOrder		  2
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Distance"
+	  SID			  "87"
+	  Position		  [110, 288, 140, 302]
+	  ZOrder		  3
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  M-S-Function
+	  Name			  "Vincenty Forward Geodesic Algorithm"
+	  SID			  "249"
+	  Ports			  [4, 3]
+	  Position		  [190, 84, 300, 326]
+	  ZOrder		  10
+	  FunctionName		  "vreckon"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "New Latitude"
+	  SID			  "84"
+	  Position		  [355, 118, 385, 132]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "New Longitude"
+	  SID			  "89"
+	  Position		  [355, 198, 385, 212]
+	  ZOrder		  5
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Inverse Heading"
+	  SID			  "258"
+	  Position		  [355, 278, 385, 292]
+	  ZOrder		  11
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Latitude"
+	  SrcPort		  1
+	  DstBlock		  "Vincenty Forward Geodesic Algorithm"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Longitude"
+	  SrcPort		  1
+	  DstBlock		  "Vincenty Forward Geodesic Algorithm"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Distance"
+	  SrcPort		  1
+	  DstBlock		  "Vincenty Forward Geodesic Algorithm"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Heading"
+	  SrcPort		  1
+	  DstBlock		  "Vincenty Forward Geodesic Algorithm"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Vincenty Forward Geodesic Algorithm"
+	  SrcPort		  1
+	  DstBlock		  "New Latitude"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Vincenty Forward Geodesic Algorithm"
+	  SrcPort		  2
+	  DstBlock		  "New Longitude"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Vincenty Forward Geodesic Algorithm"
+	  SrcPort		  3
+	  DstBlock		  "Inverse Heading"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "90"
+	  Name			  "Computes new GPS coordinates based on current GPS position and heading with radar based offsets."
+	  Position		  [162, 28, 609, 43]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Distance Converter"
+      SID		      "1"
+      Ports		      [2, 2]
+      Position		      [30, 144, 160, 226]
+      ZOrder		      3
+      BackgroundColor	      "gray"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Reusable function"
+      RTWFcnNameOpts	      "Use subsystem name"
+      RTWFileNameOpts	      "Use function name"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Distance Converter"
+	Location		[1911, -9, 3849, 1089]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Range"
+	  SID			  "2"
+	  Position		  [50, 128, 80, 142]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Azimuth"
+	  SID			  "3"
+	  Position		  [50, 188, 80, 202]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Cosine"
+	  SID			  "4"
+	  Ports			  [1, 1]
+	  Position		  [165, 167, 230, 223]
+	  ZOrder		  4
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Lookup\nTables/Cosine"
+	  SourceType		  "Sine and Cosine"
+	  ContentPreviewEnabled	  off
+	  Formula		  "cos(2*pi*u)"
+	  NumDataPoints		  "(2^5)+1"
+	  OutputWordLength	  "16"
+	  InternalRulePriority	  "Speed"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  "5"
+	  Ports			  [2, 1]
+	  Position		  [385, 127, 415, 158]
+	  ZOrder		  3
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  "108"
+	  Ports			  [2, 1]
+	  Position		  [385, 267, 415, 298]
+	  ZOrder		  6
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Sine"
+	  SID			  "109"
+	  Ports			  [1, 1]
+	  Position		  [165, 262, 230, 318]
+	  ZOrder		  7
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Lookup\nTables/Sine"
+	  SourceType		  "Sine and Cosine"
+	  ContentPreviewEnabled	  off
+	  Formula		  "sin(2*pi*u)"
+	  NumDataPoints		  "(2^5)+1"
+	  OutputWordLength	  "16"
+	  InternalRulePriority	  "Speed"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Longitudinal Distance"
+	  SID			  "6"
+	  Position		  [470, 138, 500, 152]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Lateral Distance"
+	  SID			  "107"
+	  Position		  [470, 278, 500, 292]
+	  ZOrder		  5
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Longitudinal Distance"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Azimuth"
+	  SrcPort		  1
+	  Points		  [21, 0]
+	  Branch {
+	    ZOrder		    8
+	    Points		    [0, 95]
+	    DstBlock		    "Sine"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    7
+	    DstBlock		    "Cosine"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Cosine"
+	  SrcPort		  1
+	  Points		  [72, 0; 0, -45]
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Range"
+	  SrcPort		  1
+	  Points		  [179, 0]
+	  Branch {
+	    ZOrder		    10
+	    Points		    [0, 140]
+	    DstBlock		    "Product1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    9
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Lateral Distance"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Sine"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "DocBlock"
+      SID		      "314"
+      Ports		      []
+      Position		      [1412, 30, 1452, 69]
+      ZOrder		      16
+      ShowName		      off
+      LibraryVersion	      "1.285"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/DocBlock"
+      SourceType	      "DocBlock"
+      ContentPreviewEnabled   off
+      DocumentType	      "Text"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Get BSM for Radar Target"
+      SID		      "149"
+      Ports		      [4, 1]
+      Position		      [210, 270, 340, 350]
+      ZOrder		      13
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Get BSM for Radar Target"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"157"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lat"
+	  SID			  "159"
+	  Position		  [65, 33, 95, 47]
+	  ZOrder		  8
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lon"
+	  SID			  "160"
+	  Position		  [65, 113, 95, 127]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Error Threshold"
+	  SID			  "161"
+	  Position		  [65, 468, 95, 482]
+	  ZOrder		  10
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DSRC Buffer"
+	  SID			  "164"
+	  Position		  [65, 303, 95, 317]
+	  ZOrder		  13
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BSMStoreBus"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Get DSRC Distances"
+	  SID			  "192"
+	  Ports			  [1, 5]
+	  Position		  [200, 171, 460, 449]
+	  ZOrder		  34
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Get DSRC Distances"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "104"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DSRC Buffer"
+	      SID		      "193"
+	      Position		      [445, 458, 475, 472]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector"
+	      SID		      "165"
+	      Ports		      [1, 10]
+	      Position		      [515, 245, 520, 680]
+	      ZOrder		      33
+	      ShowName		      off
+	      OutputSignals	      "Veh5BSM.lat_deg,Veh5BSM.lon_deg,Veh4BSM.lat_deg,Veh4BSM.lon_deg,Veh3BSM.lat_deg,Veh3BSM.lo"
+	      "n_deg,Veh2BSM.lat_deg,Veh2BSM.lon_deg,Veh1BSM.lat_deg,Veh1BSM.lon_deg"
+	      Port {
+		PortNumber		1
+		Name			"<lat_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<lon_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"<lat_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"<lon_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"<lat_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"<lon_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"<lat_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		8
+		Name			"<lon_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		9
+		Name			"<lat_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		10
+		Name			"<lon_deg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From"
+	      SID		      "170"
+	      Position		      [645, 206, 685, 234]
+	      ZOrder		      35
+	      GotoTag		      "lat"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From1"
+	      SID		      "171"
+	      Position		      [575, 226, 615, 254]
+	      ZOrder		      36
+	      GotoTag		      "lon"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From2"
+	      SID		      "172"
+	      Position		      [925, 286, 965, 314]
+	      ZOrder		      38
+	      GotoTag		      "lat"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From3"
+	      SID		      "173"
+	      Position		      [855, 306, 895, 334]
+	      ZOrder		      39
+	      GotoTag		      "lon"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From4"
+	      SID		      "175"
+	      Position		      [1200, 386, 1240, 414]
+	      ZOrder		      41
+	      GotoTag		      "lat"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From5"
+	      SID		      "176"
+	      Position		      [1130, 406, 1170, 434]
+	      ZOrder		      42
+	      GotoTag		      "lon"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From6"
+	      SID		      "178"
+	      Position		      [1425, 496, 1465, 524]
+	      ZOrder		      44
+	      GotoTag		      "lat"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From7"
+	      SID		      "179"
+	      Position		      [1355, 516, 1395, 544]
+	      ZOrder		      45
+	      GotoTag		      "lon"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From8"
+	      SID		      "181"
+	      Position		      [1740, 586, 1780, 614]
+	      ZOrder		      47
+	      GotoTag		      "lat"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From9"
+	      SID		      "182"
+	      Position		      [1670, 606, 1710, 634]
+	      ZOrder		      48
+	      GotoTag		      "lon"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Haversine Distance"
+	      SID		      "166"
+	      Ports		      [4, 1]
+	      Position		      [720, 211, 850, 289]
+	      ZOrder		      34
+	      LibraryVersion	      "1.123"
+	      SourceBlock	      "merge_control_lib/Haversine Distance"
+	      SourceType	      "SubSystem"
+	      ContentPreviewEnabled   off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Haversine Distance1"
+	      SID		      "174"
+	      Ports		      [4, 1]
+	      Position		      [1000, 291, 1130, 369]
+	      ZOrder		      37
+	      LibraryVersion	      "1.123"
+	      SourceBlock	      "merge_control_lib/Haversine Distance"
+	      SourceType	      "SubSystem"
+	      ContentPreviewEnabled   off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Haversine Distance2"
+	      SID		      "177"
+	      Ports		      [4, 1]
+	      Position		      [1275, 391, 1405, 469]
+	      ZOrder		      40
+	      LibraryVersion	      "1.123"
+	      SourceBlock	      "merge_control_lib/Haversine Distance"
+	      SourceType	      "SubSystem"
+	      ContentPreviewEnabled   off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Haversine Distance3"
+	      SID		      "180"
+	      Ports		      [4, 1]
+	      Position		      [1500, 501, 1630, 579]
+	      ZOrder		      43
+	      LibraryVersion	      "1.123"
+	      SourceBlock	      "merge_control_lib/Haversine Distance"
+	      SourceType	      "SubSystem"
+	      ContentPreviewEnabled   off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Haversine Distance4"
+	      SID		      "183"
+	      Ports		      [4, 1]
+	      Position		      [1815, 591, 1945, 669]
+	      ZOrder		      46
+	      LibraryVersion	      "1.123"
+	      SourceBlock	      "merge_control_lib/Haversine Distance"
+	      SourceType	      "SubSystem"
+	      ContentPreviewEnabled   off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Veh 1 Distance"
+	      SID		      "194"
+	      Position		      [1985, 623, 2015, 637]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Veh 2 Distance"
+	      SID		      "195"
+	      Position		      [1675, 533, 1705, 547]
+	      ZOrder		      1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Veh 3 Distance"
+	      SID		      "196"
+	      Position		      [1450, 423, 1480, 437]
+	      ZOrder		      2
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Veh 4 Distance"
+	      SID		      "197"
+	      Position		      [1180, 323, 1210, 337]
+	      ZOrder		      3
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Veh 5 Distance"
+	      SID		      "198"
+	      Position		      [925, 243, 955, 257]
+	      ZOrder		      4
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      23
+	      SrcBlock		      "DSRC Buffer"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "From1"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "From"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<lat_deg>"
+	      ZOrder		      5
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      1
+	      Points		      [27, 0; 0, 21; 150, 0; 0, -21]
+	      DstBlock		      "Haversine Distance"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<lon_deg>"
+	      ZOrder		      6
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      2
+	      Points		      [186, 0; 0, -25]
+	      DstBlock		      "Haversine Distance"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "From3"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "From2"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<lat_deg>"
+	      ZOrder		      9
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      3
+	      Points		      [167, 0; 0, 46; 251, 0; 0, -56]
+	      DstBlock		      "Haversine Distance1"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<lon_deg>"
+	      ZOrder		      10
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      4
+	      Points		      [81, 0; 0, -35]
+	      DstBlock		      "Haversine Distance1"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "From5"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "From4"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<lat_deg>"
+	      ZOrder		      13
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      5
+	      Points		      [304, 0; 0, 56; 389, 0; 0, -56]
+	      DstBlock		      "Haversine Distance2"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<lon_deg>"
+	      ZOrder		      14
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      6
+	      Points		      [150, 0; 0, -25]
+	      DstBlock		      "Haversine Distance2"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "From7"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance3"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "From6"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<lat_deg>"
+	      ZOrder		      17
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      7
+	      Points		      [412, 0; 0, 76; 506, 0; 0, -56]
+	      DstBlock		      "Haversine Distance3"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<lon_deg>"
+	      ZOrder		      18
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      8
+	      Points		      [960, 0]
+	      DstBlock		      "Haversine Distance3"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "From9"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance4"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "From8"
+	      SrcPort		      1
+	      DstBlock		      "Haversine Distance4"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<lat_deg>"
+	      ZOrder		      21
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      9
+	      Points		      [570, 0; 0, 43; 656, 0; 0, -23]
+	      DstBlock		      "Haversine Distance4"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<lon_deg>"
+	      ZOrder		      22
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      10
+	      Points		      [1275, 0]
+	      DstBlock		      "Haversine Distance4"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "Haversine Distance"
+	      SrcPort		      1
+	      DstBlock		      "Veh 5 Distance"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      25
+	      SrcBlock		      "Haversine Distance1"
+	      SrcPort		      1
+	      DstBlock		      "Veh 4 Distance"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      26
+	      SrcBlock		      "Haversine Distance2"
+	      SrcPort		      1
+	      DstBlock		      "Veh 3 Distance"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "Haversine Distance3"
+	      SrcPort		      1
+	      DstBlock		      "Veh 2 Distance"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      28
+	      SrcBlock		      "Haversine Distance4"
+	      SrcPort		      1
+	      DstBlock		      "Veh 1 Distance"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Get Min Index"
+	  SID			  "184"
+	  Ports			  [6, 1]
+	  Position		  [485, 173, 745, 452]
+	  ZOrder		  33
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Get Min Index"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Veh 1 Distance"
+	      SID		      "185"
+	      Position		      [110, 113, 140, 127]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Veh 2 Distance"
+	      SID		      "187"
+	      Position		      [110, 158, 140, 172]
+	      ZOrder		      1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Veh 3 Distance"
+	      SID		      "188"
+	      Position		      [110, 203, 140, 217]
+	      ZOrder		      2
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Veh 4 Distance"
+	      SID		      "189"
+	      Position		      [110, 248, 140, 262]
+	      ZOrder		      3
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Veh 5 Distance"
+	      SID		      "190"
+	      Position		      [110, 293, 140, 307]
+	      ZOrder		      4
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Error Threshold"
+	      SID		      "202"
+	      Position		      [110, 338, 140, 352]
+	      ZOrder		      6
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "MATLAB Function"
+	      SID		      "211"
+	      Ports		      [6, 1]
+	      Position		      [220, 90, 365, 375]
+	      ZOrder		      12
+	      LibraryVersion	      "1.32"
+	      ErrorFcn		      "Stateflow.Translate.translate"
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      SFBlockType	      "MATLAB Function"
+	      System {
+		Name			"MATLAB Function"
+		Location		[223, 338, 826, 833]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"25"
+		Block {
+		  BlockType		  Inport
+		  Name			  "veh1"
+		  SID			  "211::1"
+		  Position		  [20, 101, 40, 119]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "veh2"
+		  SID			  "211::21"
+		  Position		  [20, 136, 40, 154]
+		  ZOrder		  7
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "veh3"
+		  SID			  "211::22"
+		  Position		  [20, 171, 40, 189]
+		  ZOrder		  8
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "veh4"
+		  SID			  "211::23"
+		  Position		  [20, 206, 40, 224]
+		  ZOrder		  9
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "veh5"
+		  SID			  "211::24"
+		  Position		  [20, 246, 40, 264]
+		  ZOrder		  10
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "threshold"
+		  SID			  "211::25"
+		  Position		  [20, 281, 40, 299]
+		  ZOrder		  11
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  SID			  "211::19"
+		  Ports			  [1, 1]
+		  Position		  [270, 230, 320, 270]
+		  ZOrder		  5
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  " SFunction "
+		  SID			  "211::18"
+		  Tag			  "Stateflow S-Function merge_control_lib 2"
+		  Ports			  [6, 2]
+		  Position		  [180, 107, 230, 248]
+		  ZOrder		  4
+		  FunctionName		  "sf_sfun"
+		  PortCounts		  "[6 2]"
+		  EnableBusSupport	  off
+		  Port {
+		    PortNumber		    2
+		    Name		    "closestVeh"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  SID			  "211::20"
+		  Position		  [460, 241, 480, 259]
+		  ZOrder		  6
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "closestVeh"
+		  SID			  "211::5"
+		  Position		  [460, 101, 480, 119]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  35
+		  SrcBlock		  "veh1"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  36
+		  SrcBlock		  "veh2"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  37
+		  SrcBlock		  "veh3"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  38
+		  SrcBlock		  "veh4"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  39
+		  SrcBlock		  "veh5"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  5
+		}
+		Line {
+		  ZOrder		  40
+		  SrcBlock		  "threshold"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  6
+		}
+		Line {
+		  Name			  "closestVeh"
+		  ZOrder		  41
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "closestVeh"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  42
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  43
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Index"
+	      SID		      "213"
+	      Position		      [400, 228, 430, 242]
+	      ZOrder		      14
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Veh 1 Distance"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "Veh 2 Distance"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "Veh 3 Distance"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "Veh 4 Distance"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "Veh 5 Distance"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "MATLAB Function"
+	      SrcPort		      1
+	      DstBlock		      "Index"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Error Threshold"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      6
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  "167"
+	  Position		  [135, 25, 175, 55]
+	  ZOrder		  16
+	  GotoTag		  "lat"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "168"
+	  Position		  [135, 105, 175, 135]
+	  ZOrder		  17
+	  GotoTag		  "lon"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  SID			  "199"
+	  Ports			  [2, 1]
+	  Position		  [770, 176, 1030, 454]
+	  ZOrder		  35
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [-9, 0, 1929, 1032]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "145"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Index"
+	      SID		      "200"
+	      Position		      [125, 328, 155, 342]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DSRC Buffer"
+	      SID		      "214"
+	      Position		      [90, 628, 120, 642]
+	      ZOrder		      1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "233"
+	      Ports		      [5, 1]
+	      Position		      [1055, 99, 1090, 571]
+	      ZOrder		      8
+	      Inputs		      "5"
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "215"
+	      Ports		      [1, 5]
+	      Position		      [200, 95, 275, 575]
+	      ZOrder		      2
+	      CaseConditions	      "{1,2,3,4,5}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "216"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [345, 128, 415, 162]
+	      ZOrder		      3
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[-9, 0, 1929, 1032]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "217"
+		  Position		  [75, 78, 105, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "218"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "case"
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "234"
+		  Ports			  [1, 1]
+		  Position		  [170, 66, 175, 104]
+		  ZOrder		  1
+		  ShowName		  off
+		  OutputSignals		  "Veh1BSM"
+		  Port {
+		    PortNumber		    1
+		    Name		    "<Veh1BSM>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "219"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<Veh1BSM>"
+		  ZOrder		  3
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "220"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [480, 223, 550, 257]
+	      ZOrder		      4
+	      AncestorBlock	      "merge_control_lib/Get BSM for Radar Target/Subsystem/Switch Case Action\nSubsystem"
+	      LibraryVersion	      "*1.47"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[-9, 0, 1929, 1032]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"234"
+		SIDPrevWatermark	"234"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "220:217"
+		  Position		  [75, 78, 105, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "220:218"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "220:234"
+		  Ports			  [1, 1]
+		  Position		  [170, 66, 175, 104]
+		  ZOrder		  1
+		  ShowName		  off
+		  OutputSignals		  "Veh2BSM"
+		  Port {
+		    PortNumber		    1
+		    Name		    "<Veh2BSM>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "220:219"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "<Veh2BSM>"
+		  ZOrder		  1
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem2"
+	      SID		      "221"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [590, 318, 660, 352]
+	      ZOrder		      5
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem2"
+		Location		[-9, 0, 1929, 1032]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "222"
+		  Position		  [75, 78, 105, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "223"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "case"
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "235"
+		  Ports			  [1, 1]
+		  Position		  [195, 66, 200, 104]
+		  ZOrder		  1
+		  ShowName		  off
+		  OutputSignals		  "Veh3BSM"
+		  Port {
+		    PortNumber		    1
+		    Name		    "<Veh3BSM>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "224"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<Veh3BSM>"
+		  ZOrder		  3
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem3"
+	      SID		      "225"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [710, 413, 780, 447]
+	      ZOrder		      6
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem3"
+		Location		[-9, 0, 1929, 1032]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "226"
+		  Position		  [75, 78, 105, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "227"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "case"
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "236"
+		  Ports			  [1, 1]
+		  Position		  [210, 66, 215, 104]
+		  ZOrder		  1
+		  ShowName		  off
+		  OutputSignals		  "Veh4BSM"
+		  Port {
+		    PortNumber		    1
+		    Name		    "<Veh4BSM>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "228"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<Veh4BSM>"
+		  ZOrder		  3
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem4"
+	      SID		      "229"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [840, 508, 910, 542]
+	      ZOrder		      7
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem4"
+		Location		[-9, 0, 1929, 1032]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "230"
+		  Position		  [75, 78, 105, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "231"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "case"
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "237"
+		  Ports			  [1, 1]
+		  Position		  [195, 66, 200, 104]
+		  ZOrder		  1
+		  ShowName		  off
+		  OutputSignals		  "Veh5BSM"
+		  Port {
+		    PortNumber		    1
+		    Name		    "<Veh5BSM>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "232"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<Veh5BSM>"
+		  ZOrder		  3
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSM"
+	      SID		      "201"
+	      Position		      [1150, 328, 1180, 342]
+	      ZOrder		      -2
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Index"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -32]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [97, 0; 0, -45; 138, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      3
+	      Points		      [0, -236; 345, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem2"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      4
+	      Points		      [212, 0; 0, -32]
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      5
+	      Points		      [0, -137; 595, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem4"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "DSRC Buffer"
+	      SrcPort		      1
+	      Points		      [200, 0; 0, -110]
+	      Branch {
+		ZOrder			19
+		DstBlock		"Switch Case Action\nSubsystem4"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			18
+		Points			[0, -83]
+		Branch {
+		  ZOrder		  17
+		  Points		  [123, 0]
+		  Branch {
+		    ZOrder		    16
+		    Points		    [237, 0; 0, -12]
+		    DstBlock		    "Switch Case Action\nSubsystem3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    10
+		    Points		    [0, -202]
+		    DstBlock		    "Switch Case Action\nSubsystem1"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  ZOrder		  14
+		  Points		  [0, -107]
+		  Branch {
+		    ZOrder		    13
+		    DstBlock		    "Switch Case Action\nSubsystem2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    9
+		    Points		    [0, -190]
+		    DstBlock		    "Switch Case Action\nSubsystem"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      23
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "Switch Case Action\nSubsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      25
+	      SrcBlock		      "Switch Case Action\nSubsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      26
+	      SrcBlock		      "Switch Case Action\nSubsystem4"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "BSM"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSM"
+	  SID			  "162"
+	  Position		  [1065, 308, 1095, 322]
+	  ZOrder		  11
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Lat"
+	  SrcPort		  1
+	  DstBlock		  "Goto"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Lon"
+	  SrcPort		  1
+	  DstBlock		  "Goto1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  26
+	  SrcBlock		  "DSRC Buffer"
+	  SrcPort		  1
+	  Points		  [41, 0]
+	  Branch {
+	    ZOrder		    37
+	    Points		    [0, 177; 609, 0; 0, -102]
+	    DstBlock		    "Subsystem"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    36
+	    DstBlock		    "Get DSRC Distances"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  27
+	  SrcBlock		  "Get DSRC Distances"
+	  SrcPort		  1
+	  DstBlock		  "Get Min Index"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  28
+	  SrcBlock		  "Get DSRC Distances"
+	  SrcPort		  4
+	  Points		  [5, 0]
+	  DstBlock		  "Get Min Index"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  29
+	  SrcBlock		  "Get DSRC Distances"
+	  SrcPort		  2
+	  Points		  [5, 0]
+	  DstBlock		  "Get Min Index"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  30
+	  SrcBlock		  "Get DSRC Distances"
+	  SrcPort		  5
+	  Points		  [5, 0]
+	  DstBlock		  "Get Min Index"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  31
+	  SrcBlock		  "Get DSRC Distances"
+	  SrcPort		  3
+	  Points		  [0, -20]
+	  DstBlock		  "Get Min Index"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  33
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  DstBlock		  "BSM"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  34
+	  SrcBlock		  "Error Threshold"
+	  SrcPort		  1
+	  Points		  [365, 0; 0, -50]
+	  DstBlock		  "Get Min Index"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  35
+	  SrcBlock		  "Get Min Index"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Get Lead Vehicle Data"
+      SID		      "126"
+      Ports		      [2, 3]
+      Position		      [210, 19, 340, 101]
+      ZOrder		      10
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Get Lead Vehicle Data"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Radar Buffer"
+	  SID			  "127"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DSRC Buffer"
+	  SID			  "135"
+	  Position		  [110, 153, 140, 167]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Lateral Distance"
+	  SID			  "128"
+	  Position		  [475, 103, 505, 117]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Longitudinal Distance"
+	  SID			  "136"
+	  Position		  [475, 153, 505, 167]
+	  ZOrder		  2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSM"
+	  SID			  "139"
+	  Position		  [475, 208, 505, 222]
+	  ZOrder		  5
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Get Merge Vehicle Data"
+      SID		      "132"
+      Ports		      [2, 3]
+      Position		      [210, 146, 340, 224]
+      ZOrder		      12
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Get Merge Vehicle Data"
+	Location		[1911, -9, 3849, 1089]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Radar Buffer"
+	  SID			  "140"
+	  Position		  [95, 88, 130, 102]
+	  ZOrder		  7
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: FusObjectList"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DSRC Buffer"
+	  SID			  "141"
+	  Position		  [95, 198, 125, 212]
+	  ZOrder		  8
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector"
+	  SID			  "264"
+	  Ports			  [1, 2]
+	  Position		  [170, 76, 175, 114]
+	  ZOrder		  12
+	  ShowName		  off
+	  OutputSignals		  "num_objects,object_list"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<num_objects>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<object_list>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "For Each\nSubsystem"
+	  SID			  "145"
+	  Ports			  [1, 1]
+	  Position		  [250, 84, 350, 126]
+	  ZOrder		  11
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "For Each\nSubsystem"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "146"
+	      Position		      [110, 103, 140, 117]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	      Partition		      "on"
+	      PartitionDimension      "1"
+	      PartitionWidth	      "1"
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector"
+	      SID		      "263"
+	      Ports		      [1, 2]
+	      Position		      [210, 211, 215, 249]
+	      ZOrder		      10
+	      ShowName		      off
+	      OutputSignals	      "long_dist_m,long_vel_m_s"
+	      Port {
+		PortNumber		1
+		Name			"<long_dist_m>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<long_vel_m_s>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      ForEach
+	      Name		      "For Each"
+	      SID		      "147"
+	      Ports		      []
+	      Position		      [35, 25, 89, 56]
+	      ZOrder		      -2
+	      DisableCoverage	      on
+	      IndexMode		      "One-based"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "GPS/Radar Target Unity"
+	      SID		      "262"
+	      Ports		      [8, 1]
+	      Position		      [295, 213, 425, 297]
+	      ZOrder		      9
+	      LibraryVersion	      "1.62"
+	      SourceBlock	      "merge_control_lib/GPS//Radar Target Unity"
+	      SourceType	      "SubSystem"
+	      ContentPreviewEnabled   off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "148"
+	      Position		      [485, 103, 515, 117]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	      ConcatenationDimension  "1"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, 120]
+	      DstBlock		      "Bus\nSelector"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Lateral Distance"
+	  SID			  "142"
+	  Position		  [1195, 148, 1225, 162]
+	  ZOrder		  6
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Longitudinal Distance"
+	  SID			  "143"
+	  Position		  [1195, 198, 1225, 212]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSM"
+	  SID			  "144"
+	  Position		  [1195, 253, 1225, 267]
+	  ZOrder		  10
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Radar Buffer"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<object_list>"
+	  ZOrder		  4
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  2
+	  DstBlock		  "For Each\nSubsystem"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Haversine Distance"
+      SID		      "91"
+      Ports		      [4, 1]
+      Position		      [30, 521, 160, 599]
+      ZOrder		      7
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Haversine Distance"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lat1"
+	  SID			  "92"
+	  Position		  [105, 103, 135, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lon1"
+	  SID			  "95"
+	  Position		  [105, 163, 135, 177]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lat2"
+	  SID			  "96"
+	  Position		  [105, 223, 135, 237]
+	  ZOrder		  2
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lon2"
+	  SID			  "97"
+	  Position		  [105, 278, 135, 292]
+	  ZOrder		  3
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Distance"
+	  SID			  "93"
+	  Position		  [440, 163, 470, 177]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Annotation {
+	  SID			  "94"
+	  Name			  "Computes the Haversine Distance formula between two Lat/Lon pairs"
+	  Position		  [113, 31, 416, 46]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Merge Readiness Controller"
+      SID		      "7"
+      Ports		      [4, 1]
+      Position		      [30, 21, 160, 99]
+      ZOrder		      4
+      BackgroundColor	      "lightBlue"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Merge Readiness Controller"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"182"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Object List"
+	  SID			  "8"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: DetailedObjectList"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role"
+	  SID			  "10"
+	  Position		  [110, 168, 140, 182]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Enum: VehicleRoleEnum"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Desired Gap"
+	  SID			  "274"
+	  Position		  [110, 363, 140, 377]
+	  ZOrder		  15
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Epsilon"
+	  SID			  "308"
+	  Position		  [110, 408, 140, 422]
+	  ZOrder		  18
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Follow Vehicle"
+	  SID			  "29"
+	  Ports			  [3, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [490, 201, 690, 269]
+	  ZOrder		  8
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Follow Vehicle"
+	    Location		    [-9, 0, 1923, 1050]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "213"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Object List"
+	      SID		      "30"
+	      Position		      [30, 88, 60, 102]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "Bus: DetailedObjectList"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Desired Gap"
+	      SID		      "56"
+	      Position		      [30, 238, 60, 252]
+	      ZOrder		      13
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Epsilon"
+	      SID		      "304"
+	      Position		      [30, 283, 60, 297]
+	      ZOrder		      43
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "31"
+	      Position		      [170, 10, 229, 38]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector1"
+	      SID		      "282"
+	      Ports		      [1, 2]
+	      Position		      [95, 76, 100, 114]
+	      ZOrder		      40
+	      ShowName		      off
+	      OutputSignals	      "num_objects,object_list"
+	      Port {
+		PortNumber		1
+		Name			"<num_objects>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<object_list>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector3"
+	      SID		      "284"
+	      Ports		      [1, 1]
+	      Position		      [180, 131, 185, 169]
+	      ZOrder		      42
+	      ShowName		      off
+	      OutputSignals	      "FwdFusTrkALongPos"
+	      Port {
+		PortNumber		1
+		Name			"<FwdFusTrkALongPos>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Compare\nTo Constant"
+	      SID		      "312"
+	      Ports		      [1, 1]
+	      Position		      [245, 70, 275, 100]
+	      ZOrder		      46
+	      LibraryVersion	      "1.285"
+	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	      SourceType	      "Compare To Constant"
+	      ContentPreviewEnabled   off
+	      relop		      ">="
+	      const		      "2"
+	      OutDataTypeStr	      "boolean"
+	      ZeroCross		      on
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      SID		      "313"
+	      Ports		      [2, 1]
+	      Position		      [355, 112, 385, 143]
+	      ZOrder		      47
+	      AllPortsSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator2"
+	      SID		      "280"
+	      Ports		      [2, 1]
+	      Position		      [245, 157, 275, 193]
+	      ZOrder		      39
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Selector
+	      Name		      "Selector2"
+	      SID		      "283"
+	      Ports		      [1, 1]
+	      Position		      [120, 131, 160, 169]
+	      ZOrder		      41
+	      InputPortWidth	      "4"
+	      IndexOptions	      "Index vector (dialog)"
+	      Indices		      "1"
+	      OutputSizes	      "1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      SID		      "305"
+	      Ports		      [2, 1]
+	      Position		      [155, 235, 175, 255]
+	      ZOrder		      44
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Follow Vehicle Merge Readiness"
+	      SID		      "32"
+	      Position		      [445, 123, 475, 137]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Object List"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      199
+	      SrcBlock		      "Relational\nOperator2"
+	      SrcPort		      1
+	      Points		      [38, 0; 0, -40]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      191
+	      SrcBlock		      "Desired Gap"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<object_list>"
+	      ZOrder		      132
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      2
+	      Points		      [5, 0; 0, 45]
+	      DstBlock		      "Selector2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<FwdFusTrkALongPos>"
+	      ZOrder		      185
+	      Labels		      [0, 1]
+	      SrcBlock		      "Bus\nSelector3"
+	      SrcPort		      1
+	      Points		      [19, 0; 0, 15]
+	      DstBlock		      "Relational\nOperator2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      144
+	      SrcBlock		      "Selector2"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      192
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      Points		      [28, 0; 0, -60]
+	      DstBlock		      "Relational\nOperator2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      193
+	      SrcBlock		      "Epsilon"
+	      SrcPort		      1
+	      Points		      [100, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "<num_objects>"
+	      ZOrder		      197
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      1
+	      DstBlock		      "Compare\nTo Constant"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      198
+	      SrcBlock		      "Compare\nTo Constant"
+	      SrcPort		      1
+	      Points		      [39, 0; 0, 35]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      200
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Follow Vehicle Merge Readiness"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Lead Vehicle"
+	  SID			  "25"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [490, 78, 690, 142]
+	  ZOrder		  7
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Lead Vehicle"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "27"
+	      Position		      [60, 10, 119, 38]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Always Ready"
+	      SID		      "42"
+	      Position		      [45, 75, 75, 105]
+	      ZOrder		      2
+	      Value		      "true"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Lead Vehicle Merge Readiness"
+	      SID		      "28"
+	      Position		      [190, 83, 220, 97]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Always Ready"
+	      SrcPort		      1
+	      DstBlock		      "Lead Vehicle Merge Readiness"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Merge Vehicle"
+	  SID			  "33"
+	  Ports			  [3, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [490, 298, 690, 392]
+	  ZOrder		  9
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Merge Vehicle"
+	    Location		    [-9, 0, 1923, 1050]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "212"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Desired Gap"
+	      SID		      "34"
+	      Position		      [35, 118, 65, 132]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Object List"
+	      SID		      "265"
+	      Position		      [35, 78, 65, 92]
+	      ZOrder		      2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "Bus: DetailedObjectList"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Epsilon"
+	      SID		      "306"
+	      Position		      [35, 163, 65, 177]
+	      ZOrder		      45
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "35"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector"
+	      SID		      "266"
+	      Ports		      [1, 1]
+	      Position		      [80, 66, 85, 104]
+	      ZOrder		      3
+	      ShowName		      off
+	      OutputSignals	      "object_list"
+	      Port {
+		PortNumber		1
+		Name			"<object_list>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector1"
+	      SID		      "286"
+	      Ports		      [1, 1]
+	      Position		      [180, 66, 185, 104]
+	      ZOrder		      13
+	      ShowName		      off
+	      OutputSignals	      "FwdFusTrkALongPos"
+	      Port {
+		PortNumber		1
+		Name			"<FwdFusTrkALongPos>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      SID		      "270"
+	      Ports		      [2, 1]
+	      Position		      [255, 97, 285, 133]
+	      ZOrder		      8
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Selector
+	      Name		      "Selector"
+	      SID		      "285"
+	      Ports		      [1, 1]
+	      Position		      [125, 66, 165, 104]
+	      ZOrder		      12
+	      InputPortWidth	      "4"
+	      IndexOptions	      "Index vector (dialog)"
+	      Indices		      "1"
+	      OutputSizes	      "1"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      SID		      "307"
+	      Ports		      [2, 1]
+	      Position		      [165, 115, 185, 135]
+	      ZOrder		      46
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Merge Vehicle Readiness"
+	      SID		      "36"
+	      Position		      [330, 108, 360, 122]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Object List"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<object_list>"
+	      ZOrder		      4
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      1
+	      DstBlock		      "Selector"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      35
+	      SrcBlock		      "Desired Gap"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "Selector"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      29
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Merge Vehicle Readiness"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<FwdFusTrkALongPos>"
+	      ZOrder		      32
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      36
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      37
+	      SrcBlock		      "Epsilon"
+	      SrcPort		      1
+	      Points		      [105, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "Radar Data From1"
+	  SID			  "39"
+	  Position		  [395, 201, 435, 229]
+	  ZOrder		  12
+	  GotoTag		  "radar_data"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "Radar Data From2"
+	  SID			  "287"
+	  Position		  [395, 331, 435, 359]
+	  ZOrder		  17
+	  GotoTag		  "radar_data"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Radar Data Goto"
+	  SID			  "37"
+	  Position		  [185, 95, 225, 125]
+	  ZOrder		  10
+	  GotoTag		  "radar_data"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Subsystem Output Selector"
+	  SID			  "23"
+	  Ports			  [3, 1]
+	  Position		  [735, 54, 800, 396]
+	  ZOrder		  5
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  SwitchCase
+	  Name			  "Vehicle ID Switch"
+	  SID			  "24"
+	  Ports			  [1, 3]
+	  Position		  [285, 20, 345, 330]
+	  ZOrder		  6
+	  CaseConditions	  "{VehicleRoleEnum.LEAD,VehicleRoleEnum.FOLLOW,VehicleRoleEnum.MERGE}"
+	  ShowDefaultCase	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Merge Readiness"
+	  SID			  "9"
+	  Position		  [840, 218, 870, 232]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Lead Vehicle"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem Output Selector"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Follow Vehicle"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, -10]
+	  DstBlock		  "Subsystem Output Selector"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Merge Vehicle"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Subsystem Output Selector"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "Vehicle ID Switch"
+	  SrcPort		  1
+	  Points		  [240, 0]
+	  DstBlock		  "Lead Vehicle"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Vehicle ID Switch"
+	  SrcPort		  2
+	  Points		  [240, 0]
+	  DstBlock		  "Follow Vehicle"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Vehicle ID Switch"
+	  SrcPort		  3
+	  Points		  [240, 0]
+	  DstBlock		  "Merge Vehicle"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "Vehicle Role"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle ID Switch"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "Object List"
+	  SrcPort		  1
+	  DstBlock		  "Radar Data Goto"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Radar Data From1"
+	  SrcPort		  1
+	  DstBlock		  "Follow Vehicle"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Subsystem Output Selector"
+	  SrcPort		  1
+	  DstBlock		  "Merge Readiness"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  23
+	  SrcBlock		  "Desired Gap"
+	  SrcPort		  1
+	  Points		  [237, 0; 0, -55]
+	  Branch {
+	    ZOrder		    48
+	    Points		    [0, -80]
+	    DstBlock		    "Follow Vehicle"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    28
+	    DstBlock		    "Merge Vehicle"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  39
+	  SrcBlock		  "Radar Data From2"
+	  SrcPort		  1
+	  DstBlock		  "Merge Vehicle"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  43
+	  SrcBlock		  "Epsilon"
+	  SrcPort		  1
+	  Points		  [319, 0; 0, -40]
+	  Branch {
+	    ZOrder		    45
+	    DstBlock		    "Merge Vehicle"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    44
+	    Points		    [0, -120]
+	    DstBlock		    "Follow Vehicle"
+	    DstPort		    3
+	  }
+	}
+      }
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    : 0   8    (     @         %    \"     $    !     0         %  0 \"     $    8    =F5R<"
+    "VEO;@!C;VYT96YT &9O<FUA=   #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    S,S,S,S/S/"
+    "PX   \"8 P  !@    @    $          4    (     0   &,#   !         !    !C P  5&AI<R!L:6)R87)Y(&ES(')E<W!O;G-I8FQE(&"
+    "9O<B!C;VUP=71I;F<@=&AE(&UE<F=E(')E861I;F5S<R!A;F0@;65R9V4@\"F-O;7!L971I;VX@=F%L=65S(&)A<V5D('!R:6UA<FEL>2!O;B!R861"
+    "A<B!D871A+@H*5&AE($UE<F=E(%)E861I;F5S<R!#;VYT<F]L;&5R(&1E=&5R;6EN97,@=VAE=&AE<B!T:&4@=F5H:6-L92!B96QI979E<R!I=\" *"
+    ":7,@<V%F92!T;R!M97)G92X@5&AI<R!B;&]C:R!C:&5C:W,@=&AE(')A9&%R(&]B:F5C=\"!L:7-T('1O('-E92!I9B!T:&4@\"FQO;F=I='5D:6YA"
+    ";\"!D:7-T86YC92!B971W965N('1H92!V96AI8VQE(&%N9\"!I=',@;F5A<F5S=\"!O8FIE8W0@:7,@870@\"FQE87-T($1E<VER960@1V%P(\"T@1"
+    "7!S:6QO;BX@17!S:6QO;B!I<R!A;B!A8V-E<'1A8FQE(&5R<F]R(&9A8W1O<B!A9&1E9\"!T;PIG:79E(&$@8FET(&]F(&QE97=A>2!I;B!T:&4@97"
+    "9E;G0@;V8@82!G87 @;W9E<G-H;V]T(&%N9\"]O<B!O<V-I;&QA=&EO;BX@26X*=&AE(&-A<V4@;V8@=&AE(&UE<F=E('9E:&EC;&4L('1H:7,@8FQ"
+    "O8VL@86QS;R!L;V]K<R!A=\"!T:&4@;G5M8F5R(&]F( IO8FIE8W1S(')E<&]R=&5D(&)Y('1H92!R861A<B!T;R!E;G-U<F4@=&AA=\"!I=\"!C86"
+    "X@<V5E(&)O=&@@=F5H:6-L97,@\"F)E9F]R92!I=\"!O=7!U=',@;65R9V4@<F5A9'DN\"@I4:&4@0VAE8VL@4F%D87(@0V]M<&QE=&EO;B!B;&]C:"
+    "R!C:&5C:W,@=&\\@<V5E(&EF('1H92!A8G-O;'5T92!V86QU92!O9B!T:&4*;&%T97)A;\"!D:7-T86YC92!B971W965N('1H92!T=V\\@=F5H:6-L"
+    "97,@:7,@;&5S<R!T:&%N($QA;F4@5VED=&@@+2 *17!S:6QO;BX@06=A:6XL($5P<VEL;VX@:7,@86X@86-C97!T86)L92!E<G)O<B!F86-T;W(N  "
+    "     .    ,     8    (    !          %    \"     $    #     0         0  , 5%A4  "
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Aug  8 2013, 23:20:01
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "merge_control_lib"
+    created		    "29-Oct-2015 13:34:02"
+    isLibrary		    1
+    firstTarget		    14
+    sfVersion		    76014001.0016
+  }
+  chart {
+    id			    2
+    name		    "Get BSM for Radar Target/Get Min Index/MATLAB Function"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 3 0 0]
+    firstTransition	    12
+    firstJunction	    11
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    10
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    4
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "% Takes in 5 distances and returns the index (vehicle ID) of the smallest\n% one\nfunction closes"
+      "tVeh = fcn(veh1, veh2, veh3, veh4, veh5, threshold)\n%#codegen\n\na = [veh1, veh2, veh3, veh4, veh5];\nminDist ="
+      " Inf;\nminIdx = -1;\nlen = size(a);\nfor n = 1:len(1)\n    if (a(n) <= minDist) && (a(n) <= threshold)\n        "
+      "minDist = a(n);\n        minIdx = n;\n    end\nend\n\nclosestVeh = minIdx;"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    4
+    ssIdNumber		    4
+    name		    "veh1"
+    linkNode		    [2 0 5]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    5
+    ssIdNumber		    5
+    name		    "closestVeh"
+    linkNode		    [2 4 6]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    6
+    ssIdNumber		    6
+    name		    "veh2"
+    linkNode		    [2 5 7]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    7
+    name		    "veh3"
+    linkNode		    [2 6 8]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    8
+    name		    "veh4"
+    linkNode		    [2 7 9]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    9
+    ssIdNumber		    9
+    name		    "veh5"
+    linkNode		    [2 8 10]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    10
+    ssIdNumber		    10
+    name		    "threshold"
+    linkNode		    [2 9 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    11
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    12
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    13
+    name		    "Get BSM for Radar Target/Get Min Index/MATLAB Function"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    14
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lane Merge</title>
+
+    <!-- these three lines allow chrome to set as desktop icon -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/LMicon192.png">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/lanemerge.css" />
+    <link href="opensource/jquery/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet"/>
+    <script src="opensource/sockjs-0.3.4.js"></script>
+    <script src="opensource/stomp.js"></script>
+    <script src="opensource/jquery/js/jquery-1.10.2.js"></script>
+    <script src="opensource/jquery/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/audio-fix.js"></script>
+    <script src="js/lanemergeAjax.js" type="text/javascript"></script>
+    <script src="js/connect.js" type="text/javascript"></script>
+    <script src="js/lanemerge.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being enabled. Please enable
+        Javascript and reload this page!</h2></noscript>
+
+    <!-- this is the first "page" that the user sees; keeping everyting on a single html doc so the Javascript can remember what is happening -->
+    <div id="currentContent">
+        <!-- this is where all the Javascript-generated content will go, depending on the experiment state -->
+
+    </div>
+
+
+</body>
+</html>

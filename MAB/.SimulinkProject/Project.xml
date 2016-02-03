@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <EntryPoints Location="Root">
+        <EntryPoint Location="9ba4337d-729e-492c-8469-4a2dac4918b7">
+            <Info File="src/add_paths.m" Name="add_paths" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="a902b69e-dea6-4a8b-8558-55be1f93766e">
+            <Info File="src/data_files/accel_command_struct.mat"
+                Name="accel_command_struct" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="aa261b83-a200-4b4c-93f3-edc3de98d920">
+            <Info File="src/data_files/dsrc_data.mat" Name="dsrc_data" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="33cf3cd2-657d-4183-b324-cf79f18e8cb6">
+            <Info File="src/data_files/fusion_object_struct.mat"
+                Name="fusion_object_struct" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="98ec86a3-c2e6-43fa-8841-83beec516bc2">
+            <Info File="src/data_files/light_command_struct.mat"
+                Name="light_command_struct" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="8e085511-3b39-4e78-aebb-89cebef7529e">
+            <Info File="src/data_files/memory_struct.mat"
+                Name="memory_struct" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="954f6528-11dd-460f-ab2f-8483e37938b8">
+            <Info File="src/data_files/detailed_object_list.mat"
+                Name="detailed_object_list" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="05e47604-7258-4938-90cb-6ca548b7bc41">
+            <Info File="src/data_files/global_detailed_object_list.mat"
+                Name="global_detailed_object_list" Type="StartUp"/>
+        </EntryPoint>
+        <EntryPoint Location="a746a4e1-6e4e-4c68-b306-e635faf50f83">
+            <Info File="src/data_files/turn_signal_store.mat"
+                Name="turn_signal_store" Type="StartUp"/>
+        </EntryPoint>
+    </EntryPoints>
+    <Files Location="Root">
+        <File Location="src">
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="platform">
+                <File Location="command_accel_encode.c">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="srx_initialize.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="none"/>
+                    </Category>
+                </Info>
+                <File Location="srx_transmit.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="srx_platform.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="data_files">
+                <File Location="LoggingBus.sym">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="other"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="memory_struct.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="none"/>
+                    </Category>
+                </Info>
+                <File Location="LoggingBus.dbc">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="other"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="light_command_struct.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="dsrc_data.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="AccelCommandMode.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="srx_command.dbc">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="other"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="fusion_object_struct.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="accel_command_struct.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="srx_high_speed.dbc">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="other"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="GlobalA_FO.dbc">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="other"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="detailed_object_list.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="global_detailed_object_list.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="turn_signal_store.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="adapter">
+                <File Location="topr5_adapter.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="c_src">
+                    <File Location="bsm_parser.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ParseBSM.mexw64">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="der_encoder.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="der_decoder.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="der_decoder.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="SFB__ParseBSM__SFB.mat">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="bsm_parser.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="EncodeBSM.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="EncodeBSM_bus.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ParseBSM.tlc">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="other"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ParseBSM_bus.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="bsm_validator.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="none"/>
+                        </Category>
+                    </Info>
+                    <File Location="ParseBSM.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="bsm_validator.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="SFB__EncodeBSM__SFB.mat">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="bsm.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="bsm_encoder.h">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="der_encoder.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="bsm_encoder.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="rtwmakecfg.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="EncodeBSM.mexw64">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ParseBSM_wrapper.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="EncodeBSM.tlc">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="other"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="EncodeBSM_wrapper.c">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="models">
+                    <File Location="lightbar.mdl">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="none"/>
+                        </Category>
+                    </Info>
+                    <File Location="dsrc_transmitter.mdl">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="lightbar_controller.mdl">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="dsrc_handler.mdl">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="pinpt_tester.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="ParsingLibrary.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="none"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="add_paths.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="utilities">
+                <File Location="eth_decode32_sfcn.mexw64">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="derived"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="eth_decode32_sfcn.c">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="parse_utils.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="eth_bit_encoder_sfcn.mexw64">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="derived"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="eth_bit_decoder_sfcn.c">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="eth_encode32_sfcn.c">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="eth_bit_encoder_sfcn.c">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="eth_encode32_sfcn.mexw64">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="derived"/>
+                        </Category>
+                    </Info>
+                </File>
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="none"/>
+                    </Category>
+                </Info>
+                <File Location="eth_bit_decoder_sfcn.mexw64">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="derived"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="test">
+                <File Location="VehIdRead.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="carma_client_test.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="VehIdWrite.mdl">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="none"/>
+                    </Category>
+                </Info>
+            </File>
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="none"/>
+                </Category>
+            </Info>
+            <File Location="carma_platform.mdl">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+    </Files>
+    <ProjectData Location="Root"/>
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+        <Category Location="ReviewCategory">
+            <Info DataType="String" Name="Review" ReadOnly="1" SingleValued="1"/>
+            <Label Location="toReview">
+                <Info Name="To Review" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="approved">
+                <Info Name="Approved" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="rejected">
+                <Info Name="Rejected" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="needMoreInfo">
+                <Info Name="More Information Required" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+    </Categories>
+    <Extensions Location="Root"/>
+    <Info Location="ProjectData">
+        <Info Name="LaneMerge20-MAB"/>
+    </Info>
+</project>

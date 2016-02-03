@@ -1,0 +1,1798 @@
+Library {
+  Name			  "hmi_udp_lib"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_INTERNAL_RTIF"
+  "PGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-9.0, 0.0, 1932.0, 1050.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"17"
+	Extents			[1686.0, 864.0]
+	ZoomFactor		[1.7638297872340425]
+	Offset			[12.062726176115802, -7.4215922798552478]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "450"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "40"
+  Created		  "Thu Dec 10 15:31:27 2015"
+  Creator		  "rushk1"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "rushk1"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Dec 18 15:22:57 2015"
+  RTWModifiedTimeStamp	  372352918
+  ModelVersionFormat	  "1.%<AutoIncrement:17>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1401.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "rti1401.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "dSPACE DS1401 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1401_make_rtw_hook"
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"NetworkClient"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"ParMdlRefBuildCompliant"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1401.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    18
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "ParMdlRefBuildCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant on
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		"zationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			450
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		"onPopup"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Platform Name"
+		  Value			  1
+		  String		  "Network Client"
+		}
+		Name			"PlatformSelectionPopup"
+		Value			"Platform Name"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 420, 220, 1500, 860 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+  }
+  System {
+    Name		    "hmi_udp_lib"
+    Location		    [-9, 0, 1923, 1050]
+    Open		    off
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "31"
+    Block {
+      BlockType		      SubSystem
+      Name		      "SRX HMI UDP Handler"
+      SID		      "1"
+      Ports		      [1, 5]
+      Position		      [40, 54, 310, 186]
+      ZOrder		      1
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SRX HMI UDP Handler"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"190"
+	Block {
+	  BlockType		  Inport
+	  Name			  "merge_states"
+	  SID			  "4"
+	  Position		  [125, 188, 155, 202]
+	  ZOrder		  426
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "SRX HMI UDP RX Handler"
+	  SID			  "5"
+	  Ports			  [0, 4]
+	  Position		  [195, 314, 440, 571]
+	  ZOrder		  423
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "SRX HMI UDP RX Handler"
+	    Location		    [-9, 0, 1923, 1050]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "DSDecode32 "
+	      SID		      "6"
+	      Ports		      [1, 1]
+	      Position		      [525, 73, 625, 117]
+	      ZOrder		      525
+	      FunctionName	      "eth_decode32_sfcn"
+	      Parameters	      "byteordering,offset,auto_offset,datatype,one_datatype,sampletime"
+	      EnableBusSupport	      off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		18
+		$ClassName		"Simulink.Mask"
+		Type			"DSDecode32"
+		Description		"Converts a 32bit WORD input data stream into the specified datatypes on the output port.\n\nDatatype C"
+		"odes:\nBOOLEAN:  1   //   INT8      :  2    //   UINT8    :  3  \nINT16       :  4   //   UINT16 :  5    //   INT32 "
+		"    :  6   \nUINT32    :  7   //   FLOAT   :  8    //   DOUBLE:  9   "
+		Help			"The 'DSDecode32' block allows to decode an UInt32 vector containing encoded elements of various data types t"
+		"o an output vector of double values. It is intended to use this block in conjunction with the 'DS4504_ETH_Receive' b"
+		"lock which delivers this format as data output. Data received from the Ethernet via the 'DS4504_ETH_Receive' block i"
+		"s performed in Intel byte order ('Little Endian'). \n\n<br>\n<br>\n\n<h2>Parameters</h2>\n<br>\n<br>\n\n<b>Byte orde"
+		"ring (only relevant for offline simulation)</b>\n<br>\n<blockquote>\nThe byte order of the input vector has to be sp"
+		"ecified. In case of running a real-time application the appropriate byte order (Motorola for DS1005 and Intel for DS"
+		"1006) is selected automatically. Therefore the byte order setting has no influence on the online simulation.\n</bloc"
+		"kquote>\n<br>\n\n<b>Offset (bytes)</b>\n<br>\n<blockquote>\nThis is for defining a vector of offsets which specifies"
+		" the position of each element within the input vector. The offsets must be entered as an array (e.g. [1 10 . 50 54] "
+		") using the same order as for the corresponding data type vector (see (4)). This option is useful if you have gaps b"
+		"etween adjacent elements. \n</blockquote>\n<br>\n\n<b>Auto offset</b>\n<br>\n<blockquote>\nWhen activating this chec"
+		"kbox parameter, the edit field 'Offset' is disabled and the byte offsets in the input vector are calculated automati"
+		"cally concerning the specified data types (no gaps presupposed). Any previous setting in the offset vector would be "
+		"ignored.\n</blockquote>\n<br>\n\n<b>Datatype</b>\n<br>\n<blockquote>\nThis is for defining a vector of data types wh"
+		"ich specifies the type for each element in the input vector. Supported data types are Boolean, Int8, UInt8, Int16, U"
+		"Int16, Int32, UInt32, Float and Double, which are determined by using the corresponding data type codes shown in the"
+		" following table:\n<br>\n<br>\n<table BORDER=1 ALIGN=\"center\">\n<TR>\n<TH WIDTH=20%>Data type</TH>\n<TH WIDTH=20%>"
+		"Data type code</TH>\n<TH WIDTH=20%>Length in bytes</TH>\n</TR>\n<TR><TD>Boolean</TD><TD ALIGN=\"center\">1</TD><TD A"
+		"LIGN=\"center\">1</TD></TR>\n<TR><TD>Int8</TD><TD ALIGN=\"center\">2</TD><TD ALIGN=\"center\">1</TD></TR>\n<TR><TD>U"
+		"int8</TD><TD ALIGN=\"center\">3</TD><TD ALIGN=\"center\">1</TD></TR>\n<TR><TD>Int16</TD><TD ALIGN=\"center\">4</TD><"
+		"TD ALIGN=\"center\">2</TD></TR>\n<TR><TD>Uint16</TD><TD ALIGN=\"center\">5</TD><TD ALIGN=\"center\">2</TD></TR>\n<TR"
+		"><TD>Int32</TD><TD ALIGN=\"center\">6</TD><TD ALIGN=\"center\">4</TD></TR>\n<TR><TD>Uint32</TD><TD ALIGN=\"center\">"
+		"7</TD><TD ALIGN=\"center\">4</TD></TR>\n<TR><TD>Float</TD><TD ALIGN=\"center\">8</TD><TD ALIGN=\"center\">4</TD></TR"
+		">\n<TR><TD>Double</TD><TD ALIGN=\"center\">9</TD><TD ALIGN=\"center\">8</TD></TR>\n</TABLE>\n</blockquote>\n<br>\n\n"
+		"<b>One datatype only</b>\n<br>\n<blockquote>\nThis option is useful if all elements of the input vector have the sam"
+		"e data type. If the checkbox is activated the first element of the data type vector specifies the data type to be us"
+		"ed. In this case it is naturally sufficient to enter only one number which applies for the complete input vector.\n<"
+		"/blockquote>\n<br>\n\n<b>Sample time</b>\n<br>\n<blockquote>\nThe desired sample time for this block has to be enter"
+		"ed here. Alternatively it can be  inherited from the Simulink model by using '-1'. \n</blockquote>\n<br>"
+		SelfModifiable		"on"
+		Display			"text(0.5,0.5,'DSDecode32','HorizontalAlignment','center')"
+		IconUnits		"normalized"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  6
+		  Object {
+		    $ObjectID		    19
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "big endian (Motorola)"
+		    Cell		    "little endian (Intel)"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "byteordering"
+		    Prompt		    "Byte ordering:"
+		    Value		    "big endian (Motorola)"
+		  }
+		  Object {
+		    $ObjectID		    20
+		    Type		    "edit"
+		    Name		    "offset"
+		    Prompt		    "Offset (bytes):"
+		    Value		    "[0]"
+		    Enabled		    "off"
+		  }
+		  Object {
+		    $ObjectID		    21
+		    Type		    "checkbox"
+		    Name		    "auto_offset"
+		    Prompt		    "Auto offset"
+		    Value		    "on"
+		  }
+		  Object {
+		    $ObjectID		    22
+		    Type		    "edit"
+		    Name		    "datatype"
+		    Prompt		    "Datatype:"
+		    Value		    "[3,3]"
+		  }
+		  Object {
+		    $ObjectID		    23
+		    Type		    "checkbox"
+		    Name		    "one_datatype"
+		    Prompt		    "One datatype only"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    24
+		    Type		    "edit"
+		    Name		    "sampletime"
+		    Prompt		    "Sampletime:"
+		    Value		    "-1"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Demux"
+	      SID		      "7"
+	      Ports		      [1, 2]
+	      Position		      [680, 17, 755, 168]
+	      ZOrder		      501
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Demux"
+		Location		[-8, 0, 1608, 876]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"125"
+		Block {
+		  BlockType		  Inport
+		  Name			  "cmd_msg"
+		  SID			  "8"
+		  Position		  [65, 198, 95, 212]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux"
+		  SID			  "9"
+		  Ports			  [1, 2]
+		  Position		  [120, 168, 135, 237]
+		  ZOrder		  -2
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		  Outputs		  "2"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "cmd_header"
+		  SID			  "10"
+		  Position		  [190, 178, 220, 192]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "cmd_ value"
+		  SID			  "11"
+		  Position		  [190, 213, 220, 227]
+		  ZOrder		  1
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "cmd_msg"
+		  SrcPort		  1
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Demux"
+		  SrcPort		  1
+		  DstBlock		  "cmd_header"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Demux"
+		  SrcPort		  2
+		  DstBlock		  "cmd_ value"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "ETHERNET_UDP_RX_COMMAND"
+	      SID		      "12"
+	      Ports		      [0, 3]
+	      Position		      [105, 80, 370, 180]
+	      ZOrder		      57
+	      LibraryVersion	      "1.142"
+	      SourceBlock	      "rtiethernetudplib/ETHERNET_UDP_RX_BL1"
+	      SourceType	      "RTI"
+	      ContentPreviewEnabled   off
+	      InterfaceName	      "NOT SPECIFIED"
+	      BoardType		      "ETH Type 1"
+	      ModuleNo		      "1"
+	      ChannelNo		      "1"
+	      SocketNo		      "4"
+	      MaxMessageSize	      "5"
+	      LocalSocket	      "XXX.XXX.XXX.XXX:5000"
+	      RemoteSocket	      "XXX.XXX.XXX.XXX:5000"
+	      DSProperties	      "struct('RTI',struct('Version',uint32(1),'BlockType',struct('isSLSource',uint8(1),'isSLSink'"
+	      ",uint8(0),'isHWSource',uint8(0),'isHWSink',uint8(1),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8("
+	      "1),'isInterrupt',uint8(0),'isChannelwise',uint8(1)),'IOBoardType','DSETHERNETUDP','UnitType','ETHUDP','Identifi"
+	      "er','RX','DialogType','SL','BlockSet','RTIETHERNETUDP','SlaveProcessor','NONE'))"
+	      RTIBlockInterface	      "struct('OutputPortsWidth',int32([1 1 1]),'OutputPortsActive',[1 1 1],'OutputPortsName'"
+	      ",{{'Data',['Message Size'],'Status'}},'OutputPortsDataType',{{'SS_UINT32','SS_INT32','SS_BOOLEAN'}},'BlockDispl"
+	      "ay',{{['Ethernet UDP Receive\\nBoard Type: ETH Type 1\\nModule: 1\\nSocket: 4\\nMaximum Message Size: 5'],'cent"
+	      "er'}},'IconTransparency','on','InitLevel',3,'BlockName',struct('Token',{{'ETHERNET_UDP_RX_BL1'}}),'MaskDescript"
+	      "ion',['To receive messages from the Ethernet UDP interface.'])"
+	      RTIBlockParameters      "struct('InterfaceName',{{['NOT SPECIFIED'],'OFF',[]}},'BoardType',{{1,'OFF',[]}},'Modu"
+	      "leNo',{{1,'OFF',[1 16]}},'ChannelNo',{{1,'OFF',[1 2]}},'SocketNo',{{4,'OFF',[1 4]}},'MaxMessageSize',{{5,'ON',["
+	      "1 1472]}},'LocalSocket',{{'XXX.XXX.XXX.XXX:5000','OFF',[]}},'RemoteSocket',{{'XXX.XXX.XXX.XXX:5000','OFF',[]}})"
+	      RTISFcnParameters	      "struct('InterfaceName','char','BoardType','double','ModuleNo','double','ChannelNo','do"
+	      "uble','SocketNo','double','MaxMessageSize','double','LocalSocket','char','RemoteSocket','char')"
+	      RTIBlockParaDefault     "struct('InterfaceName','rti_ethernet_interface_name','BoardType',1,'ModuleNo',1,'Chann"
+	      "elNo',1,'SocketNo',1,'MaxMessageSize',625,'LocalSocket','XXX.XXX.XXX.XXX:5000','RemoteSocket','XXX.XXX.XXX.XXX:"
+	      "5000')"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cmd_header"
+	      SID		      "13"
+	      Position		      [825, 48, 855, 62]
+	      ZOrder		      521
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cmd_value"
+	      SID		      "14"
+	      Position		      [825, 123, 855, 137]
+	      ZOrder		      522
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cmd_msg_size"
+	      SID		      "15"
+	      Position		      [540, 183, 570, 197]
+	      ZOrder		      498
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cmd_msg_status"
+	      SID		      "16"
+	      Position		      [415, 158, 445, 172]
+	      ZOrder		      499
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "ETHERNET_UDP_RX_COMMAND"
+	      SrcPort		      1
+	      DstBlock		      "DSDecode32 "
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "ETHERNET_UDP_RX_COMMAND"
+	      SrcPort		      3
+	      DstBlock		      "cmd_msg_status"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "ETHERNET_UDP_RX_COMMAND"
+	      SrcPort		      2
+	      Points		      [125, 0; 0, 60]
+	      DstBlock		      "cmd_msg_size"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "DSDecode32 "
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "cmd_header"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "cmd_value"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "SRX HMI UDP TX Handler"
+	  SID			  "17"
+	  Ports			  [1, 1]
+	  Position		  [200, 149, 445, 241]
+	  ZOrder		  425
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "SRX HMI UDP TX Handler"
+	    Location		    [-9, 0, 1923, 1050]
+	    Open		    on
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "176"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "merge_states"
+	      SID		      "18"
+	      Position		      [55, 43, 85, 57]
+	      ZOrder		      411
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "19"
+	      Position		      [55, 90, 85, 120]
+	      ZOrder		      67
+	      Value		      "2"
+	      OutDataTypeStr	      "int32"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "20"
+	      Position		      [55, 145, 85, 175]
+	      ZOrder		      68
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "DSEncode1"
+	      SID		      "21"
+	      Ports		      [1, 1]
+	      Position		      [215, 28, 315, 72]
+	      ZOrder		      407
+	      LibraryVersion	      "1.7"
+	      SourceBlock	      "parse_utils/DSEncode32"
+	      SourceType	      "DSEncode32"
+	      byteordering	      "little endian (Intel)"
+	      offset		      "[ 0 ]  "
+	      auto_offset	      on
+	      datatype		      "[3 3]"
+	      one_datatype	      off
+	      sampletime	      "-1"
+	    }
+	    Block {
+	      BlockType		      Display
+	      Name		      "Display"
+	      SID		      "22"
+	      Ports		      [1]
+	      Position		      [765, 40, 855, 70]
+	      ZOrder		      65
+	      Decimation	      "1"
+	    }
+	    Block {
+	      BlockType		      Display
+	      Name		      "Display1"
+	      SID		      "23"
+	      Ports		      [1]
+	      Position		      [305, 299, 580, 451]
+	      ZOrder		      413
+	      Format		      "binary (Stored Integer)"
+	      Decimation	      "1"
+	    }
+	    Block {
+	      BlockType		      Display
+	      Name		      "Display2"
+	      SID		      "31"
+	      Ports		      [1]
+	      Position		      [685, 274, 960, 426]
+	      ZOrder		      414
+	      Format		      "binary (Stored Integer)"
+	      Decimation	      "1"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "ETHERNET_UDP_TX_BL1"
+	      SID		      "24"
+	      Ports		      [3, 1]
+	      Position		      [415, 24, 680, 186]
+	      ZOrder		      63
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.142"
+	      SourceBlock	      "rtiethernetudplib/ETHERNET_UDP_TX_BL1"
+	      SourceType	      "RTI"
+	      ContentPreviewEnabled   off
+	      InterfaceName	      "NOT SPECIFIED"
+	      BoardType		      "ETH Type 1"
+	      ModuleNo		      "1"
+	      ChannelNo		      "1"
+	      SocketNo		      "4"
+	      MaxMessageSize	      "2"
+	      SendTimeout	      "0.0005"
+	      LocalSocket	      "XXX.XXX.XXX.XXX:5000"
+	      RemoteSocket	      "XXX.XXX.XXX.XXX:5000"
+	      DSProperties	      "struct('RTI',struct('Version',uint32(2),'BlockType',struct('isSLSource',uint8(1),'isSLSink'"
+	      ",uint8(1),'isHWSource',uint8(1),'isHWSink',uint8(1),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8("
+	      "1),'isInterrupt',uint8(0),'isChannelwise',uint8(1)),'IOBoardType','DSETHERNETUDP','UnitType','ETHUDP','Identifi"
+	      "er','TX','DialogType','SL','BlockSet','RTIETHERNETUDP','SlaveProcessor','NONE'))"
+	      RTIBlockInterface	      "struct('OutputPortsWidth',int32(1),'OutputPortsActive',1,'OutputPortsName',{{'Status'}"
+	      "},'OutputPortsDataType',{{'SS_UINT16'}},'InputPortsWidth',int32([1 1 1]),'InputPortsActive',[1 1 1],'InputPorts"
+	      "Name',{{'Data',['Message Size'],'Enable'}},'InputPortsDataType',{{'SS_UINT32','SS_INT32','SS_BOOLEAN'}},'BlockD"
+	      "isplay',{{['Ethernet UDP Transmit\\nBoard Type: ETH Type 1\\nModule: 1\\nSocket: 4\\nMaximum Message Size: 2'],"
+	      "'center'}},'IconTransparency','on','InitLevel',3,'BlockName',struct('Token',{{'ETHERNET_UDP_TX_BL1'}}),'MaskDes"
+	      "cription',['To send messages via the Ethernet UDP interface.'])"
+	      RTIBlockParameters      "struct('InterfaceName',{{['NOT SPECIFIED'],'OFF',[]}},'BoardType',{{1,'OFF',[]}},'Modu"
+	      "leNo',{{1,'OFF',[1 16]}},'ChannelNo',{{1,'OFF',[1 2]}},'SocketNo',{{4,'OFF',[1 4]}},'MaxMessageSize',{{2,'ON',["
+	      "1 1472]}},'SendTimeout',{{0.0005,'ON',[1e-05 2]}},'LocalSocket',{{'XXX.XXX.XXX.XXX:5000','OFF',[]}},'RemoteSock"
+	      "et',{{'XXX.XXX.XXX.XXX:5000','OFF',[]}})"
+	      RTISFcnParameters	      "struct('InterfaceName','char','BoardType','double','ModuleNo','double','ChannelNo','do"
+	      "uble','SocketNo','double','MaxMessageSize','double','SendTimeout','double','LocalSocket','char','RemoteSocket',"
+	      "'char')"
+	      RTIBlockParaDefault     "struct('InterfaceName','rti_ethernet_interface_name','BoardType',1,'ModuleNo',1,'Chann"
+	      "elNo',1,'SocketNo',1,'MaxMessageSize',625,'SendTimeout',0.0005,'LocalSocket','XXX.XXX.XXX.XXX:5000','RemoteSock"
+	      "et','XXX.XXX.XXX.XXX:5000')"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Status"
+	      SID		      "25"
+	      Position		      [770, 123, 800, 137]
+	      ZOrder		      70
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "ETHERNET_UDP_TX_BL1"
+	      SrcPort		      1
+	      Points		      [27, 0]
+	      Branch {
+		ZOrder			2
+		Points			[0, 25]
+		DstBlock		"Status"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			3
+		Points			[0, -50]
+		DstBlock		"Display"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      DstBlock		      "ETHERNET_UDP_TX_BL1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "ETHERNET_UDP_TX_BL1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "DSEncode1"
+	      SrcPort		      1
+	      Points		      [26, 0]
+	      Branch {
+		ZOrder			7
+		Points			[0, -37; -326, 0; 0, 362]
+		DstBlock		"Display1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			8
+		DstBlock		"ETHERNET_UDP_TX_BL1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "merge_states"
+	      SrcPort		      1
+	      Points		      [64, 0]
+	      Branch {
+		ZOrder			12
+		Points			[0, 193; 479, 0; 0, 107]
+		DstBlock		"Display2"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			11
+		DstBlock		"DSEncode1"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Status"
+	  SID			  "26"
+	  Position		  [505, 188, 535, 202]
+	  ZOrder		  424
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "cmd_header"
+	  SID			  "27"
+	  Position		  [505, 338, 535, 352]
+	  ZOrder		  427
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "cmd_value"
+	  SID			  "28"
+	  Position		  [505, 403, 535, 417]
+	  ZOrder		  428
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "cmd_msg_size"
+	  SID			  "29"
+	  Position		  [505, 468, 535, 482]
+	  ZOrder		  429
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "cmd_msg_status"
+	  SID			  "30"
+	  Position		  [505, 533, 535, 547]
+	  ZOrder		  430
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "SRX HMI UDP TX Handler"
+	  SrcPort		  1
+	  DstBlock		  "Status"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "merge_states"
+	  SrcPort		  1
+	  DstBlock		  "SRX HMI UDP TX Handler"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "SRX HMI UDP RX Handler"
+	  SrcPort		  4
+	  DstBlock		  "cmd_msg_status"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "SRX HMI UDP RX Handler"
+	  SrcPort		  3
+	  DstBlock		  "cmd_msg_size"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "SRX HMI UDP RX Handler"
+	  SrcPort		  2
+	  DstBlock		  "cmd_value"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "SRX HMI UDP RX Handler"
+	  SrcPort		  1
+	  DstBlock		  "cmd_header"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

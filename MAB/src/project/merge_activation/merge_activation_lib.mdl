@@ -1,0 +1,4554 @@
+Library {
+  Name			  "merge_activation_lib"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_INTERNAL_RTIF"
+  "PGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-9.0, -9.0, 1938.0, 1050.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1692.0, 864.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 45.300003290176392]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "450"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "40"
+  Created		  "Tue Nov 10 12:53:42 2015"
+  Creator		  "rushk1"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "rushk1"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Dec 24 10:22:40 2015"
+  RTWModifiedTimeStamp	  372853353
+  ModelVersionFormat	  "1.%<AutoIncrement:83>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1401.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "rti1401.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "dSPACE DS1401 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1401_make_rtw_hook"
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"NetworkClient"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"ParMdlRefBuildCompliant"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1401.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    18
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "ParMdlRefBuildCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant on
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		"zationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			450
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		"onPopup"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Platform Name"
+		  Value			  1
+		  String		  "Network Client"
+		}
+		Name			"PlatformSelectionPopup"
+		Value			"Platform Name"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 420, 220, 1500, 860 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      PropagateVarSize	      "Only when execution is resumed"
+      ActionType	      "unset"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataStoreWrite
+      DataStoreName	      "A"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+      PortDimensions	      "1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "double"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      If
+      NumInputs		      "1"
+      IfExpression	      "u1 > 0"
+      ShowElse		      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      SwitchCase
+      CaseConditions	      "{1}"
+      ShowDefaultCase	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "merge_activation_lib"
+    Location		    [-9, -9, 1929, 1041]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "278"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cancel Merge Request/\nEnter Neutral State"
+      SID		      "119"
+      Ports		      [0, 1, 1]
+      Position		      [95, 329, 195, 371]
+      ZOrder		      11
+      BackgroundColor	      "gray"
+      LibraryVersion	      "1.23"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Cancel Merge Request/\nEnter Neutral State"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "122"
+	  Ports			  []
+	  Position		  [322, 20, 342, 40]
+	  ZOrder		  1
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Neutral Constant"
+	  SID			  "124"
+	  Position		  [20, 57, 175, 113]
+	  ZOrder		  10
+	  Value			  "MergeStateEnum.STARTUP"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Startup Flag"
+	  SID			  "143"
+	  Position		  [340, 78, 370, 92]
+	  ZOrder		  11
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Neutral Constant"
+	  SrcPort		  1
+	  DstBlock		  "Startup Flag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute Merge Complete"
+      SID		      "233"
+      Ports		      [3, 1]
+      Position		      [285, 566, 480, 664]
+      ZOrder		      18
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute Merge Complete"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"226"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Prev State Flag"
+	  SID			  "234"
+	  Position		  [20, 368, 50, 382]
+	  ZOrder		  2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Target Alignment"
+	  SID			  "235"
+	  Position		  [20, 143, 50, 157]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role"
+	  SID			  "268"
+	  Position		  [20, 103, 50, 117]
+	  ZOrder		  13
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "236"
+	  Ports			  [1, 1]
+	  Position		  [135, 220, 245, 260]
+	  ZOrder		  10
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  ContentPreviewEnabled	  off
+	  relop			  "=="
+	  const			  "MergeStateEnum.F_MERGE_READY"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant1"
+	  SID			  "267"
+	  Ports			  [1, 1]
+	  Position		  [145, 315, 255, 355]
+	  ZOrder		  12
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  ContentPreviewEnabled	  off
+	  relop			  "=="
+	  const			  "MergeStateEnum.M_MERGE_READY"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  If
+	  Name			  "If"
+	  SID			  "238"
+	  Ports			  [3, 2]
+	  Position		  [285, 176, 385, 214]
+	  ZOrder		  4
+	  NumInputs		  "3"
+	  IfExpression		  "u1 & (u2 | u3)"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "239"
+	  Ports			  [2, 1]
+	  Position		  [550, 84, 610, 306]
+	  ZOrder		  9
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Output Merge Complete"
+	  SID			  "240"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [420, 122, 490, 158]
+	  ZOrder		  5
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Output Merge Complete"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "125"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vehicle Role"
+	      SID		      "269"
+	      Position		      [10, 178, 40, 192]
+	      ZOrder		      2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "241"
+	      Position		      [225, 20, 284, 48]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "272"
+	      Ports		      [2, 1]
+	      Position		      [490, 85, 540, 280]
+	      ZOrder		      15
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "273"
+	      Ports		      [1, 2]
+	      Position		      [130, 166, 230, 204]
+	      ZOrder		      11
+	      CaseConditions	      "{VehicleRoleEnum.MERGE, VehicleRoleEnum.FOLLOW}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "274"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [380, 118, 450, 152]
+	      ZOrder		      12
+	      AncestorBlock	      "merge_activation_lib/Compute Merge Ready/Output Merge Ready/Switch Case Action\nSubsystem"
+	      LibraryVersion	      "*1.69"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[-9, -9, 1929, 1041]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"282"
+		SIDPrevWatermark	"276"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "274:256"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "274:260"
+		  Position		  [25, 70, 255, 100]
+		  ZOrder		  1
+		  Value			  "MergeStateEnum.M_MERGE_COMPLETE"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "274:257"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "275"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [380, 213, 450, 247]
+	      ZOrder		      14
+	      AncestorBlock	      "merge_activation_lib/Compute Merge Ready/Output Merge Ready/Switch Case Action\nSubsystem1"
+	      LibraryVersion	      "*1.69"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[-9, -9, 1929, 1041]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"282"
+		SIDPrevWatermark	"276"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "275:263"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "275:265"
+		  Position		  [10, 70, 250, 100]
+		  ZOrder		  1
+		  Value			  "MergeStateEnum.F_MERGE_COMPLETE"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "275:264"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Merge Complete"
+	      SID		      "243"
+	      Position		      [595, 178, 625, 192]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [0, -72]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Merge Complete"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Vehicle Role"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Passthrough"
+	  SID			  "244"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [420, 232, 490, 268]
+	  ZOrder		  8
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Passthrough"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "245"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "246"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "247"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "New State Flag"
+	  SID			  "248"
+	  Position		  [685, 188, 715, 202]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "If"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "New State Flag"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Output Merge Complete"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Passthrough"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Prev State Flag"
+	  SrcPort		  1
+	  Points		  [63, 0]
+	  Branch {
+	    ZOrder		    17
+	    Points		    [0, -40]
+	    Branch {
+	      ZOrder		      21
+	      Points		      [0, -95]
+	      DstBlock		      "Compare\nTo Constant"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      20
+	      DstBlock		      "Compare\nTo Constant1"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    15
+	    Points		    [287, 0]
+	    DstBlock		    "Passthrough"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "If"
+	  SrcPort		  2
+	  Points		  [65, 0]
+	  DstBlock		  "Passthrough"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "If"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, -78]
+	  DstBlock		  "Output Merge Complete"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Target Alignment"
+	  SrcPort		  1
+	  Points		  [208, 0; 0, 35]
+	  DstBlock		  "If"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "Compare\nTo Constant1"
+	  SrcPort		  1
+	  Points		  [3, 0; 0, -130]
+	  DstBlock		  "If"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  23
+	  SrcBlock		  "Vehicle Role"
+	  SrcPort		  1
+	  Points		  [176, 0; 0, 30]
+	  DstBlock		  "Output Merge Complete"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute Merge Ready"
+      SID		      "214"
+      Ports		      [3, 1]
+      Position		      [285, 426, 480, 524]
+      ZOrder		      17
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute Merge Ready"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"176"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Prev State Flag"
+	  SID			  "215"
+	  Position		  [20, 323, 50, 337]
+	  ZOrder		  2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Merge Arrangement"
+	  SID			  "216"
+	  Position		  [95, 138, 125, 152]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role"
+	  SID			  "250"
+	  Position		  [20, 113, 50, 127]
+	  ZOrder		  13
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "230"
+	  Ports			  [1, 1]
+	  Position		  [170, 180, 200, 210]
+	  ZOrder		  10
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  ContentPreviewEnabled	  off
+	  relop			  "=="
+	  const			  "MergeStateEnum.MERGE_REQUEST"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant1"
+	  SID			  "231"
+	  Ports			  [1, 1]
+	  Position		  [170, 255, 200, 285]
+	  ZOrder		  11
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  ContentPreviewEnabled	  off
+	  relop			  "=="
+	  const			  "MergeStateEnum.F_MERGE_REQUEST_ACK"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  If
+	  Name			  "If"
+	  SID			  "218"
+	  Ports			  [3, 2]
+	  Position		  [285, 128, 385, 212]
+	  ZOrder		  4
+	  NumInputs		  "3"
+	  IfExpression		  "u1 & (u2 | u3)"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "219"
+	  Ports			  [2, 1]
+	  Position		  [760, 164, 820, 386]
+	  ZOrder		  9
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Output Merge Ready"
+	  SID			  "220"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [545, 169, 700, 271]
+	  ZOrder		  5
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Output Merge Ready"
+	    Location		    [-9, 0, 1923, 1050]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "150"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vehicle Role"
+	      SID		      "259"
+	      Position		      [20, 313, 50, 327]
+	      ZOrder		      7
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "221"
+	      Position		      [415, 20, 474, 48]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "266"
+	      Ports		      [2, 1]
+	      Position		      [450, 220, 500, 415]
+	      ZOrder		      9
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "253"
+	      Ports		      [1, 2]
+	      Position		      [90, 301, 190, 339]
+	      ZOrder		      4
+	      CaseConditions	      "{VehicleRoleEnum.MERGE, VehicleRoleEnum.FOLLOW}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "254"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [340, 253, 410, 287]
+	      ZOrder		      5
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[-9, -9, 1929, 1041]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "256"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "case"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "260"
+		  Position		  [40, 70, 240, 100]
+		  ZOrder		  1
+		  Value			  "MergeStateEnum.M_MERGE_READY"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "257"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "261"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [340, 348, 410, 382]
+	      ZOrder		      8
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[-9, -9, 1929, 1041]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "263"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "case"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "265"
+		  Position		  [35, 70, 225, 100]
+		  ZOrder		  1
+		  Value			  "MergeStateEnum.F_MERGE_READY"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "264"
+		  Position		  [325, 78, 355, 92]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Merge Request"
+	      SID		      "223"
+	      Position		      [555, 313, 585, 327]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [0, -72]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Vehicle Role"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Merge Request"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Passthrough"
+	  SID			  "224"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [575, 312, 645, 348]
+	  ZOrder		  8
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Passthrough"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "225"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "226"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "227"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "New State Flag"
+	  SID			  "228"
+	  Position		  [895, 268, 925, 282]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Merge Arrangement"
+	  SrcPort		  1
+	  DstBlock		  "If"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "If"
+	  SrcPort		  1
+	  Points		  [230, 0]
+	  DstBlock		  "Output Merge Ready"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "If"
+	  SrcPort		  2
+	  Points		  [119, 0; 0, 107]
+	  DstBlock		  "Passthrough"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Prev State Flag"
+	  SrcPort		  1
+	  Points		  [63, 0]
+	  Branch {
+	    ZOrder		    21
+	    DstBlock		    "Passthrough"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    14
+	    Points		    [0, -60]
+	    Branch {
+	      ZOrder		      18
+	      Points		      [0, -75]
+	      DstBlock		      "Compare\nTo Constant"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      16
+	      DstBlock		      "Compare\nTo Constant1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Passthrough"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Output Merge Ready"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "New State Flag"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  Points		  [37, 0; 0, -25]
+	  DstBlock		  "If"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "Compare\nTo Constant1"
+	  SrcPort		  1
+	  Points		  [58, 0; 0, -75]
+	  DstBlock		  "If"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "Vehicle Role"
+	  SrcPort		  1
+	  Points		  [472, 0; 0, 100]
+	  DstBlock		  "Output Merge Ready"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute Merge Request"
+      SID		      "180"
+      Ports		      [4, 1]
+      Position		      [285, 158, 480, 257]
+      ZOrder		      15
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute Merge Request"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"275"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Prev State Flag"
+	  SID			  "183"
+	  Position		  [85, 278, 115, 292]
+	  ZOrder		  2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Turn Signal Status"
+	  SID			  "184"
+	  Position		  [85, 133, 115, 147]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role"
+	  SID			  "192"
+	  Position		  [85, 173, 115, 187]
+	  ZOrder		  7
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ACC Status"
+	  SID			  "249"
+	  Position		  [85, 213, 115, 227]
+	  ZOrder		  10
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "277"
+	  Ports			  [1, 1]
+	  Position		  [135, 165, 165, 195]
+	  ZOrder		  11
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  ContentPreviewEnabled	  off
+	  relop			  "=="
+	  const			  "VehicleRoleEnum.MERGE"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  If
+	  Name			  "If"
+	  SID			  "185"
+	  Ports			  [3, 2]
+	  Position		  [180, 118, 280, 242]
+	  ZOrder		  4
+	  NumInputs		  "3"
+	  IfExpression		  "u1 & u2 & u3"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "198"
+	  Ports			  [2, 1]
+	  Position		  [440, 69, 495, 356]
+	  ZOrder		  9
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Output Merge Request"
+	  SID			  "186"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [315, 122, 385, 158]
+	  ZOrder		  5
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Output Merge Request"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "188"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	      ActionType	      "then"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "191"
+	      Position		      [30, 62, 225, 108]
+	      ZOrder		      1
+	      Value		      "MergeStateEnum.MERGE_REQUEST"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Merge Request"
+	      SID		      "189"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Merge Request"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Passthrough"
+	  SID			  "194"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [315, 267, 385, 303]
+	  ZOrder		  8
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Passthrough"
+	    Location		    [342, 471, 840, 771]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "195"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "196"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	      ActionType	      "else"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "197"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "New State Flag"
+	  SID			  "182"
+	  Position		  [540, 208, 570, 222]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Turn Signal Status"
+	  SrcPort		  1
+	  DstBlock		  "If"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "If"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, -43]
+	  DstBlock		  "Output Merge Request"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "If"
+	  SrcPort		  2
+	  Points		  [65, 0]
+	  DstBlock		  "Passthrough"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Vehicle Role"
+	  SrcPort		  1
+	  DstBlock		  "Compare\nTo Constant"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Prev State Flag"
+	  SrcPort		  1
+	  DstBlock		  "Passthrough"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Passthrough"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Output Merge Request"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "New State Flag"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "ACC Status"
+	  SrcPort		  1
+	  DstBlock		  "If"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  DstBlock		  "If"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute Merge Request ACK"
+      SID		      "199"
+      Ports		      [3, 1]
+      Position		      [285, 291, 480, 389]
+      ZOrder		      16
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute Merge Request ACK"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Prev State Flag"
+	  SID			  "200"
+	  Position		  [85, 243, 115, 257]
+	  ZOrder		  2
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Merge Request Status"
+	  SID			  "201"
+	  Position		  [85, 133, 115, 147]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role"
+	  SID			  "202"
+	  Position		  [85, 198, 115, 212]
+	  ZOrder		  7
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "229"
+	  Ports			  [1, 1]
+	  Position		  [265, 190, 295, 220]
+	  ZOrder		  10
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  ContentPreviewEnabled	  off
+	  relop			  "=="
+	  const			  "VehicleRoleEnum.FOLLOW"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  If
+	  Name			  "If"
+	  SID			  "203"
+	  Ports			  [2, 2]
+	  Position		  [445, 176, 545, 214]
+	  ZOrder		  4
+	  NumInputs		  "2"
+	  IfExpression		  "u1 & u2"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "204"
+	  Ports			  [2, 1]
+	  Position		  [710, 84, 770, 306]
+	  ZOrder		  9
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Output Merge Request ACK"
+	  SID			  "205"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [580, 122, 650, 158]
+	  ZOrder		  5
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Output Merge Request ACK"
+	    Location		    [-9, 0, 1923, 1050]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "441"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "206"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "207"
+	      Position		      [10, 67, 245, 103]
+	      ZOrder		      1
+	      Value		      "MergeStateEnum.F_MERGE_REQUEST_ACK"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Merge Request ACK"
+	      SID		      "208"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Merge Request ACK"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Passthrough"
+	  SID			  "209"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [580, 232, 650, 268]
+	  ZOrder		  8
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Passthrough"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "210"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "211"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "212"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "New State Flag"
+	  SID			  "213"
+	  Position		  [845, 188, 875, 202]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "New State Flag"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Output Merge Request ACK"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Passthrough"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Prev State Flag"
+	  SrcPort		  1
+	  DstBlock		  "Passthrough"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "If"
+	  SrcPort		  2
+	  Points		  [65, 0]
+	  DstBlock		  "Passthrough"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "If"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, -78]
+	  DstBlock		  "Output Merge Request ACK"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Merge Request Status"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 45]
+	  DstBlock		  "If"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Vehicle Role"
+	  SrcPort		  1
+	  DstBlock		  "Compare\nTo Constant"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  DstBlock		  "If"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compute Startup"
+      SID		      "175"
+      Ports		      [0, 1]
+      Position		      [330, 74, 430, 116]
+      ZOrder		      13
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Compute Startup"
+	Location		[-9, 0, 1929, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "178"
+	  Position		  [80, 90, 220, 130]
+	  ZOrder		  1
+	  Value			  "MergeStateEnum.STARTUP"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Startup Flag"
+	  SID			  "177"
+	  Position		  [360, 103, 390, 117]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Startup Flag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "DocBlock"
+      SID		      "278"
+      Ports		      []
+      Position		      [612, 90, 652, 129]
+      ZOrder		      19
+      ShowName		      off
+      LibraryVersion	      "1.285"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/DocBlock"
+      SourceType	      "DocBlock"
+      ContentPreviewEnabled   off
+      DocumentType	      "Text"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Merge Activation State Machine"
+      SID		      "109"
+      Ports		      [5, 1]
+      Position		      [90, 589, 205, 741]
+      ZOrder		      9
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Merge Activation State Machine"
+	Location		[-9, 0, 1929, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"148"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Turn Signal Status"
+	  SID			  "110"
+	  Position		  [60, 53, 90, 67]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Merge Control Status"
+	  SID			  "112"
+	  Position		  [60, 113, 90, 127]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ACC Status"
+	  SID			  "115"
+	  Position		  [60, 173, 90, 187]
+	  ZOrder		  4
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role"
+	  SID			  "113"
+	  Position		  [60, 233, 90, 247]
+	  ZOrder		  2
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Radar Completion Status"
+	  SID			  "135"
+	  Position		  [60, 328, 90, 342]
+	  ZOrder		  20
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Cancel Merge Request/\nEnter Neutral State"
+	  SID			  "125"
+	  Ports			  [0, 1, 1]
+	  Position		  [295, 444, 395, 486]
+	  ZOrder		  11
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "merge_activation_lib/Cancel Merge Request//\nEnter Neutral State"
+	  SourceType		  "SubSystem"
+	  ContentPreviewEnabled	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  SID			  "126"
+	  Ports			  [2, 1]
+	  Position		  [315, 159, 345, 191]
+	  ZOrder		  12
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  SID			  "127"
+	  Ports			  [2, 1]
+	  Position		  [580, 154, 610, 186]
+	  ZOrder		  13
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator2"
+	  SID			  "128"
+	  Ports			  [1, 1]
+	  Position		  [315, 104, 345, 136]
+	  ZOrder		  14
+	  Operator		  "NOT"
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator3"
+	  SID			  "129"
+	  Ports			  [2, 1]
+	  Position		  [385, 109, 415, 141]
+	  ZOrder		  15
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator4"
+	  SID			  "130"
+	  Ports			  [2, 1]
+	  Position		  [465, 227, 495, 258]
+	  ZOrder		  16
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator5"
+	  SID			  "136"
+	  Ports			  [2, 1]
+	  Position		  [810, 314, 840, 346]
+	  ZOrder		  21
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator6"
+	  SID			  "137"
+	  Ports			  [2, 1]
+	  Position		  [645, 259, 675, 291]
+	  ZOrder		  22
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator7"
+	  SID			  "138"
+	  Ports			  [1, 1]
+	  Position		  [580, 264, 610, 296]
+	  ZOrder		  23
+	  Operator		  "NOT"
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator8"
+	  SID			  "151"
+	  Ports			  [3, 1]
+	  Position		  [1028, 379, 1063, 441]
+	  ZOrder		  29
+	  Operator		  "NOR"
+	  Inputs		  "3"
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "139"
+	  Ports			  [4, 1]
+	  Position		  [1025, 500, 1065, 540]
+	  ZOrder		  24
+	  Inputs		  "4"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Merge Vehicle Role ID\n"
+	  SID			  "133"
+	  Position		  [210, 265, 345, 295]
+	  ZOrder		  19
+	  Value			  "VehicleRoleEnum.MERGE"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Output Merge Complete"
+	  SID			  "148"
+	  Ports			  [1, 1, 1]
+	  Position		  [870, 444, 970, 486]
+	  ZOrder		  28
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "merge_activation_lib/Output Merge Complete"
+	  SourceType		  "SubSystem"
+	  ContentPreviewEnabled	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Output Merge Ready"
+	  SID			  "149"
+	  Ports			  [1, 1, 1]
+	  Position		  [675, 444, 775, 486]
+	  ZOrder		  27
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "merge_activation_lib/Output Merge Ready"
+	  SourceType		  "SubSystem"
+	  ContentPreviewEnabled	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Output Merge Request"
+	  SID			  "150"
+	  Ports			  [0, 1, 1]
+	  Position		  [485, 444, 585, 486]
+	  ZOrder		  26
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "merge_activation_lib/Output Merge Request"
+	  SourceType		  "SubSystem"
+	  ContentPreviewEnabled	  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  SID			  "131"
+	  Ports			  [2, 1]
+	  Position		  [385, 232, 415, 263]
+	  ZOrder		  17
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Current State"
+	  SID			  "144"
+	  Position		  [1090, 513, 1120, 527]
+	  ZOrder		  25
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Vehicle Role"
+	  SrcPort		  1
+	  Points		  [98, 0]
+	  Branch {
+	    ZOrder		    121
+	    Points		    [0, 124; 462, 0; 0, 56]
+	    Branch {
+	      ZOrder		      123
+	      Points		      [198, 0; 0, 45]
+	      DstBlock		      "Output Merge Complete"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      122
+	      Points		      [0, 45]
+	      DstBlock		      "Output Merge Ready"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    120
+	    DstBlock		    "Relational\nOperator"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "Turn Signal Status"
+	  SrcPort		  1
+	  Points		  [194, 0; 0, 110]
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  25
+	  SrcBlock		  "Merge Control Status"
+	  SrcPort		  1
+	  Points		  [83, 0]
+	  Branch {
+	    ZOrder		    35
+	    Points		    [0, -31; 387, 0]
+	    DstBlock		    "Logical\nOperator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    34
+	    DstBlock		    "Logical\nOperator2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "ACC Status"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  26
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  Points		  [11, 0]
+	  Branch {
+	    ZOrder		    64
+	    Points		    [130, 0; 0, 155]
+	    DstBlock		    "Logical\nOperator5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    57
+	    Points		    [0, 100]
+	    DstBlock		    "Logical\nOperator6"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  29
+	  SrcBlock		  "Logical\nOperator2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  30
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    ZOrder		    32
+	    DstBlock		    "Logical\nOperator1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    31
+	    DstBlock		    "Logical\nOperator3"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  36
+	  SrcBlock		  "Merge Vehicle Role ID\n"
+	  SrcPort		  1
+	  Points		  [13, 0; 0, -25]
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  42
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator4"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  43
+	  SrcBlock		  "Logical\nOperator3"
+	  SrcPort		  1
+	  Points		  [22, 0; 0, 110]
+	  DstBlock		  "Logical\nOperator4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  91
+	  SrcBlock		  "Logical\nOperator4"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 145]
+	  Branch {
+	    ZOrder		    98
+	    DstBlock		    "Output Merge Request"
+	    DstPort		    enable
+	  }
+	  Branch {
+	    ZOrder		    97
+	    DstBlock		    "Logical\nOperator8"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  52
+	  SrcBlock		  "Radar Completion Status"
+	  SrcPort		  1
+	  Points		  [455, 0]
+	  Branch {
+	    ZOrder		    62
+	    DstBlock		    "Logical\nOperator5"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    60
+	    Points		    [0, -55]
+	    DstBlock		    "Logical\nOperator7"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  94
+	  SrcBlock		  "Logical\nOperator5"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, 99]
+	  Branch {
+	    ZOrder		    108
+	    Points		    [0, 1]
+	    DstBlock		    "Logical\nOperator8"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    107
+	    DstBlock		    "Output Merge Complete"
+	    DstPort		    enable
+	  }
+	}
+	Line {
+	  ZOrder		  61
+	  SrcBlock		  "Logical\nOperator7"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator6"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  92
+	  SrcBlock		  "Logical\nOperator6"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 135]
+	  Branch {
+	    ZOrder		    101
+	    DstBlock		    "Logical\nOperator8"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    100
+	    DstBlock		    "Output Merge Ready"
+	    DstPort		    enable
+	  }
+	}
+	Line {
+	  ZOrder		  85
+	  SrcBlock		  "Cancel Merge Request/\nEnter Neutral State"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, 70]
+	  DstBlock		  "Merge"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  90
+	  SrcBlock		  "Output Merge Request"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 60]
+	  DstBlock		  "Merge"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  93
+	  SrcBlock		  "Output Merge Ready"
+	  SrcPort		  1
+	  Points		  [56, 0; 0, 50]
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  95
+	  SrcBlock		  "Output Merge Complete"
+	  SrcPort		  1
+	  Points		  [22, 0; 0, 40]
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  89
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "Current State"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  99
+	  SrcBlock		  "Logical\nOperator8"
+	  SrcPort		  1
+	  Points		  [77, 0; 0, 157; -871, 0; 0, -149; 71, 0]
+	  DstBlock		  "Cancel Merge Request/\nEnter Neutral State"
+	  DstPort		  enable
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Output Merge Complete"
+      SID		      "1"
+      Ports		      [1, 1, 1]
+      Position		      [95, 239, 195, 281]
+      ZOrder		      7
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Output Merge Complete"
+	Location		[-9, 0, 1929, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role\n"
+	  SID			  "163"
+	  Position		  [80, 128, 110, 142]
+	  ZOrder		  24
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "3"
+	  Ports			  []
+	  Position		  [292, 35, 312, 55]
+	  ZOrder		  13
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "164"
+	  Ports			  [2, 1]
+	  Position		  [660, 160, 700, 200]
+	  ZOrder		  28
+	}
+	Block {
+	  BlockType		  SwitchCase
+	  Name			  "Switch Case"
+	  SID			  "165"
+	  Ports			  [1, 2]
+	  Position		  [185, 116, 285, 154]
+	  ZOrder		  25
+	  CaseConditions	  "{VehicleRoleEnum.MERGE, VehicleRoleEnum.FOLLOW}"
+	  ShowDefaultCase	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem"
+	  SID			  "166"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [405, 153, 475, 187]
+	  ZOrder		  26
+	  AncestorBlock		  "merge_activation_lib/Output Merge Ready/Switch Case Action\nSubsystem"
+	  LibraryVersion	  "*1.27"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "163"
+	    SIDPrevWatermark	    "162"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "166:158"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "166:163"
+	      Position		      [85, 70, 115, 100]
+	      ZOrder		      1
+	      Value		      "MergeStateEnum.M_MERGE_COMPLETE"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "166:159"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem1"
+	  SID			  "167"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [405, 238, 475, 272]
+	  ZOrder		  27
+	  AncestorBlock		  "merge_activation_lib/Output Merge Ready/Switch Case Action\nSubsystem1"
+	  LibraryVersion	  "*1.27"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem1"
+	    Location		    [-9, 0, 1929, 1050]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "163"
+	    SIDPrevWatermark	    "163"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "167:158"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Merge Ready Constant"
+	      SID		      "167:163"
+	      Position		      [75, 70, 105, 100]
+	      ZOrder		      7
+	      Value		      "MergeStateEnum.F_MERGE_COMPLETE"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "167:159"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Merge Ready Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Merge Complete Flag"
+	  SID			  "168"
+	  Position		  [790, 173, 820, 187]
+	  ZOrder		  23
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  1
+	  Points		  [150, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  2
+	  Points		  [0, 78]
+	  DstBlock		  "Switch Case Action\nSubsystem1"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Vehicle Role\n"
+	  SrcPort		  1
+	  DstBlock		  "Switch Case"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Switch Case Action\nSubsystem"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Switch Case Action\nSubsystem1"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, -65]
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "Merge Complete Flag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Output Merge Ready"
+      SID		      "29"
+      Ports		      [1, 1, 1]
+      Position		      [95, 154, 195, 196]
+      ZOrder		      6
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Output Merge Ready"
+	Location		[-9, 0, 1929, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Role\n"
+	  SID			  "154"
+	  Position		  [30, 143, 60, 157]
+	  ZOrder		  17
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "31"
+	  Ports			  []
+	  Position		  [282, 60, 302, 80]
+	  ZOrder		  13
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "162"
+	  Ports			  [2, 1]
+	  Position		  [610, 175, 650, 215]
+	  ZOrder		  22
+	}
+	Block {
+	  BlockType		  SwitchCase
+	  Name			  "Switch Case"
+	  SID			  "155"
+	  Ports			  [1, 2]
+	  Position		  [135, 131, 235, 169]
+	  ZOrder		  18
+	  CaseConditions	  "{VehicleRoleEnum.MERGE, VehicleRoleEnum.FOLLOW}"
+	  ShowDefaultCase	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem"
+	  SID			  "156"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [355, 168, 425, 202]
+	  ZOrder		  19
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "158"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "169"
+	      Position		      [70, 70, 100, 100]
+	      ZOrder		      8
+	      Value		      "MergeStateEnum.M_MERGE_READY"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "159"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem1"
+	  SID			  "160"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [355, 253, 425, 287]
+	  ZOrder		  20
+	  AncestorBlock		  "merge_activation_lib/Output Merge Ready/Switch Case Action\nSubsystem"
+	  LibraryVersion	  "*1.25"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem1"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "163"
+	    SIDPrevWatermark	    "162"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "160:158"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Merge Ready Constant"
+	      SID		      "160:163"
+	      Position		      [75, 70, 105, 100]
+	      ZOrder		      7
+	      Value		      "MergeStateEnum.F_MERGE_READY"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "160:159"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Merge Ready Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Merge Ready Flag"
+	  SID			  "141"
+	  Position		  [740, 188, 770, 202]
+	  ZOrder		  14
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  1
+	  Points		  [150, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  2
+	  Points		  [0, 78]
+	  DstBlock		  "Switch Case Action\nSubsystem1"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Vehicle Role\n"
+	  SrcPort		  1
+	  DstBlock		  "Switch Case"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Switch Case Action\nSubsystem"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Switch Case Action\nSubsystem1"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, -65]
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "Merge Ready Flag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Output Merge Request"
+      SID		      "57"
+      Ports		      [0, 1, 1]
+      Position		      [95, 64, 195, 106]
+      ZOrder		      5
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Output Merge Request"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "59"
+	  Ports			  []
+	  Position		  [552, 145, 572, 165]
+	  ZOrder		  12
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Merge Request Constant"
+	  SID			  "60"
+	  Position		  [380, 235, 410, 265]
+	  ZOrder		  10
+	  Value			  "MergeStateEnum.MERGE_REQUEST"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Merge Request Flag"
+	  SID			  "140"
+	  Position		  [575, 243, 605, 257]
+	  ZOrder		  13
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Merge Request Constant"
+	  SrcPort		  1
+	  DstBlock		  "Merge Request Flag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Output Merge Request ACK"
+      SID		      "170"
+      Ports		      [0, 1, 1]
+      Position		      [95, 424, 195, 466]
+      ZOrder		      12
+      BackgroundColor	      "gray"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Output Merge Request ACK"
+	Location		[-9, -9, 1929, 1041]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "172"
+	  Ports			  []
+	  Position		  [235, 20, 255, 40]
+	  ZOrder		  -2
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "174"
+	  Position		  [55, 100, 85, 130]
+	  ZOrder		  1
+	  Value			  "MergeStateEnum.MERGE_REQUEST_ACK"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Merge Request ACK Flag"
+	  SID			  "173"
+	  Position		  [325, 108, 355, 122]
+	  ZOrder		  -3
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Merge Request ACK Flag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Write Maneuver ID"
+      SID		      "85"
+      Ports		      [2]
+      Position		      [95, 504, 195, 546]
+      ZOrder		      8
+      BackgroundColor	      "gray"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Write Maneuver ID"
+	Location		[-9, 0, 1923, 1050]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Maneuver ID"
+	  SID			  "86"
+	  Position		  [115, 478, 145, 492]
+	  ZOrder		  8
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle ID"
+	  SID			  "87"
+	  Position		  [105, 223, 135, 237]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SwitchCase
+	  Name			  "Switch Case"
+	  SID			  "88"
+	  Ports			  [1, 5]
+	  Position		  [275, 38, 370, 422]
+	  ZOrder		  10
+	  CaseConditions	  "{1,2,3,4,5}"
+	  ShowDefaultCase	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem"
+	  SID			  "89"
+	  Ports			  [1, 0, 0, 0, 0, 0, 0, 1]
+	  Position		  [505, 93, 575, 127]
+	  ZOrder		  11
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "90"
+	      Position		      [55, 93, 85, 107]
+	      ZOrder		      2
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "91"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      DataStoreWrite
+	      Name		      "Data Store\nWrite"
+	      SID		      "92"
+	      Ports		      [1]
+	      Position		      [285, 45, 430, 155]
+	      ZOrder		      1
+	      DataStoreName	      "BSMStoreSignal"
+	      DataStoreElements	      "BSMStoreSignal.Veh1BSM.vehManID"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Data Store\nWrite"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem1"
+	  SID			  "93"
+	  Ports			  [1, 0, 0, 0, 0, 0, 0, 1]
+	  Position		  [505, 173, 575, 207]
+	  ZOrder		  12
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem1"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "94"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "95"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      DataStoreWrite
+	      Name		      "Data Store\nWrite"
+	      SID		      "96"
+	      Ports		      [1]
+	      Position		      [325, 30, 470, 140]
+	      ZOrder		      2
+	      DataStoreName	      "BSMStoreSignal"
+	      DataStoreElements	      "BSMStoreSignal.Veh2BSM.vehManID"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Data Store\nWrite"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem2"
+	  SID			  "97"
+	  Ports			  [1, 0, 0, 0, 0, 0, 0, 1]
+	  Position		  [505, 243, 575, 277]
+	  ZOrder		  13
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem2"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "98"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "99"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      DataStoreWrite
+	      Name		      "Data Store\nWrite"
+	      SID		      "100"
+	      Ports		      [1]
+	      Position		      [330, 30, 475, 140]
+	      ZOrder		      2
+	      DataStoreName	      "BSMStoreSignal"
+	      DataStoreElements	      "BSMStoreSignal.Veh3BSM.vehManID"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Data Store\nWrite"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem3"
+	  SID			  "101"
+	  Ports			  [1, 0, 0, 0, 0, 0, 0, 1]
+	  Position		  [505, 318, 575, 352]
+	  ZOrder		  14
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem3"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "102"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "103"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      DataStoreWrite
+	      Name		      "Data Store\nWrite"
+	      SID		      "104"
+	      Ports		      [1]
+	      Position		      [320, 30, 465, 140]
+	      ZOrder		      2
+	      DataStoreName	      "BSMStoreSignal"
+	      DataStoreElements	      "BSMStoreSignal.Veh4BSM.vehManID"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Data Store\nWrite"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem4"
+	  SID			  "105"
+	  Ports			  [1, 0, 0, 0, 0, 0, 0, 1]
+	  Position		  [505, 403, 575, 437]
+	  ZOrder		  15
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Switch Case Action\nSubsystem4"
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "106"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "107"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      DataStoreWrite
+	      Name		      "Data Store\nWrite"
+	      SID		      "108"
+	      Ports		      [1]
+	      Position		      [330, 30, 475, 140]
+	      ZOrder		      2
+	      DataStoreName	      "BSMStoreSignal"
+	      DataStoreElements	      "BSMStoreSignal.Veh5BSM.vehManID"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Data Store\nWrite"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  5
+	  Points		  [165, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem4"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  4
+	  Points		  [165, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem3"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  3
+	  Points		  [165, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem2"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  2
+	  Points		  [165, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem1"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Switch Case"
+	  SrcPort		  1
+	  Points		  [165, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Vehicle ID"
+	  SrcPort		  1
+	  DstBlock		  "Switch Case"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Maneuver ID"
+	  SrcPort		  1
+	  Points		  [323, 0; 0, -65]
+	  Branch {
+	    ZOrder		    8
+	    Points		    [0, -85]
+	    Branch {
+	      ZOrder		      9
+	      Points		      [0, -75]
+	      Branch {
+		ZOrder			10
+		Points			[0, -70]
+		Branch {
+		  ZOrder		  11
+		  Points		  [0, -80]
+		  DstBlock		  "Switch Case Action\nSubsystem"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  12
+		  DstBlock		  "Switch Case Action\nSubsystem1"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			13
+		DstBlock		"Switch Case Action\nSubsystem2"
+		DstPort			1
+	      }
+	    }
+	    Branch {
+	      ZOrder		      14
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    15
+	    DstBlock		    "Switch Case Action\nSubsystem4"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    P @   8    (     @         %    \"     $    !     0         %  0 \"     $    8    =F5R<"
+    "VEO;@!C;VYT96YT &9O<FUA=   #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    S,S,S,S/S/"
+    "PX   #P!P  !@    @    $          4    (     0   +X'   !         !    \"^!P  5&AI<R!L:6)R87)Y(&ES(')E<W!O;G-I8FQE(&"
+    "9O<B!C;VUP=71I;F<@=&AE('-T871E(&]F(&5A8V@@=F5H:6-L92!I;B!T:&4*97AP97)I;65N=\"X*\"E1H92!S=&%T92!C;VUP=71A=&EO;B!I<R"
+    "!S970@=7 @<W5C:\"!A;&P@<W1A=&5S(&%R92!L:6YE87(@*'-T871E(#(@\"G)E<75I<F5S(&UE971I;F<@=&AE(')E<75I<F5M96YT<R!F;W(@<W"
+    "1A=&4@,BDN($%S('-U8V@@96%C:\"!S=&%T92!B;&]C:R *=&%K97,@:6X@=&AE(&EN9F]R;6%T:6]N(&%B;W5T(&ET<R!R97%U:7)E;65N=',@86Y"
+    "D('1H92!P<F5V:6]U<R!S=&%T92 *8FQO8VLG<R!O=71P=70N($EF('1H92!R97%U:7)E;65N=',@87)E(&UE=\"!T:&4@8FQO8VL@;W5T<'5T<R!T"
+    ":&4@;F5W( IS=&%T92X@268@=&AE>2!A<F4@;F]T(&UE=\"!T:&4@8FQO8VL@;W5T<'5T<R!T:&4@<')E=FEO=7,@<W1A=&4@8FQO8VLG<R *=F%L="
+    "64N(%1H:7,@=V%Y(')E<75I<F5M96YT<R!A<F4@8V]M<'5T960@<V5Q=65N=&EA;&QY(&%N9\"!T:&4@:&EG:&5S=\" *;&5V96P@=&AA=\"!G971S"
+    "('-A=&ES9FEE9\"!I<R!T:&4@=6QT:6UA=&4@;W5T<'5T(&%T('1H92!E;F0N\"@I4:&4@9FER<W0@<W1A=&4@*#!X,# @+2!35$%25%50*2!I<R!O"
+    "=71P=70@8GD@=&AE($-O;7!U=&4@4W1A<G1U<\"!B;&]C:R!A<PIA(&-O;G-T86YT+\"!T:'5S(&UA:VEN9R!I=\"!T:&4@9&5F875L=\"X*\"D-O;"
+    "7!U=&4@365R9V4@4F5Q=65S=\"!R97%U:7)E<R!T:&4@=&AE(&-U<G)E;G0@=F5H:6-L92!R;VQE('1O(&)E(&UE<F=E+\" *=&AE('9E:&EC;&4@="
+    "&\\@8F4@:6X@04-#+\"!A;F0@=&AE('1U<FX@<VEG;F%L('1O(&)E(&]N(\"AI;B!E:71H97(@\"F1I<F5C=&EO;BDN\"@I#;VUP=71E($UE<F=E(%"
+    ")E<75E<W0@04-+(')E<75I<F5S('1H92!V96AI8VQE(')O;&4@=&\\@8F4@9F]L;&]W+\"!T:&4@;65R9V4*=F5H:6-L92=S(&%N9\"!T:&4@;65R9"
+    "V4@=F5H:6-L92=S(&UE<F=E(')E<75E<W0@=&\\@8F4@;VXN\"@I#;VUP=71E($UE<F=E(%)E861Y(')E<75I<F5S('1H92!P<F5V:6]U<R!S=&%T9"
+    "2!T;R!B92!M97)G92!R97%U97-T(&]R( IM97)G92!R97%U97-T(&%C:R!A;F0@9F]R('1H92!-97)G92!!<G)A;F=E;65N=\"!I;G!U=\"!T;R!B9"
+    "2!T<G5E+B!4:&4@;65R9V4*87)R86YG96UE;G0@:7,@8V]M<'5T960@8GD@82!S97!A<F%T92!B;&]C:R!I;B!T:&4@3&%N92!-97)G92!#;VYT<F]"
+    "L($-O9&4*8G5T('1O('-U;6UA<FEZ93H*\"D9O<B!T:&4@;65R9V4@=F5H:6-L92!T:&4@8VQO<V5S=\"!R861A<B!O8FIE8W0@;75S=\"!B92!A=\""
+    " ^/4<@9&ES=&%N8V4@9G)O;0IT:&4@=F5H:6-L92X*\"D9O<B!T:&4@9F]L;&]W('9E:&EC;&4@=&AE(&-L;W-E<W0@<F%D87(@;V)J96-T(&UU<W0"
+    "@86QS;R!B92!A=\" ^/4<@\"F1I<W1A;F-E(&9R;VT@=&AE('9E:&EC;&4@86YD(&ET(&UU<W0@86QS;R!H879E(&%T(&QE87-T('1W;R!R861A<B!"
+    "T87)G971S+@H*0V]M<'5T92!-97)G92!#;VUP;&5T92!R97%U:7)E<R!T:&4@<')E=FEO=7,@<W1A=&4@=&\\@8F4@;65R9V4@<F5A9'D@86YD(&ES"
+    "\"F%C=&EV92!W:&5N('1H92!T87)G970@:7,@86QI9VYE9\"!I;B!T:&4@<V%M92!L86YE(\"AC;VUP=71E9\"!I;B!A('-E<&%R871E( IB;&]C:R"
+    "DN\"@I);B!T:&4@3&%N92!-97)G92!#;VYT<F]L($-O9&4L('1H97-E(#4@8FQO8VMS(&%R92!C:&%I;F5D(\"AO=71P=70@=&\\@:6YP=70I\"G1O"
+    "('!R;V1U8V4@=&AE(&]V97)A;&P@<W1A=&4@=F%L=64@9F]R('1H92!C=7)R96YT('1I;65S=&5P+B!4:&ES('9A;'5E(&ES( IR96-O;7!U=&5D(&"
+    "5V97)Y('1I;65S=&5P+\"!U;FQE<W,@=&AE(&QA=&-H(&ES(&5N9V%G960N(%1H92!L871C:\"!I<R!E;F=A9V5D\"FEF('1H92!M97)G92!C;VUP;"
+    "&5T92!S=&%T92!H87,@8F5E;B!H96QD(&9O<B R,\"!C;VYS96-U=&EV92!T:6UE<W1E<',@86YD\"FES(&-L96%R960@;VYC92!T:&4@04-#('-Y<"
+    "W1E;2!H87,@8F5E;B!D96%C=&EV871E9\"X   X    P    !@    @    $          4    (     0    ,    !         !   P!46%0 "
+  }
+}
