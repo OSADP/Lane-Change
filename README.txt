@@ -38,7 +38,3 @@ Documentation
 -------------
 There is no software documentation available.
 
-Web sites
----------
-The software is distributed through the USDOT's JPO Open Source Application Development Portal (OSADP)
-http://itsforge.net/ 
